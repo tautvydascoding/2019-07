@@ -1,0 +1,17 @@
+﻿//==========js isvesimas su PHP==========
+
+ // if (condition) {
+//     echo "<script type='text/javascript'>
+//                 console.log('jau suveikiau');
+//           </script>";
+// }
+
+
+//================MYSQL  DB exportavimas per terminala=======
+ // exprot using terminal
+C:\MAMP\bin\mysql\bin\mysqldump.exe -u root -p 'hospital1' > "C:\Users\User\Documents\Projektas\uzduotys\MAMP\diena_15\mano_DB.sql"
+
+C:\xampp\mysql\bin\mysqldump.exe -u root -p hospital10 > "C:\Users\info\Documents\Projektai\uzduotys\MAMP\diena_15\Elvinas\doctors_DB\mano_DB.sql"
+
+//import using terminal
+C:\MAMP\bin\mysql\bin\mysql.exe -u root -p 'hospital1' < "C:\Users\User\Documents\Projektas\uzduotys\MAMP\diena_15\mano_DB.sql"
