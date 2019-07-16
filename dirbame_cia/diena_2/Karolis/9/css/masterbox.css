@@ -1,0 +1,33 @@
+h1 {
+    color: red;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;}
+h2 {margin-top: 0px;    }
+.box {
+    text-align: center;
+    background-color: lightgrey;
+    border: solid 2px black;
+    width: 30%;
+    float: left;
+    margin-left: 2%;}
+
+.color-r h2 {background-color: red;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+
+
+}
+
+.color-p h2  {background-color: pink;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+
+}
+.color-y h2 {background-color: yellow;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+}
+}
+.close {clear: both;
+        content: "";}

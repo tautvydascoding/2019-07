@@ -1,0 +1,25 @@
+h1 {text-align: center;}
+.chicken {
+    background-color: lightgrey;
+    border: solid 2px black;
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+}
+.beef {
+    background-color: lightgrey;
+    border: solid 2px black;
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+
+}
+.sushi {
+    background-color: lightgrey;
+    border: solid 2px black;
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+}
+.close {clear: both;
+        content: "";}}
