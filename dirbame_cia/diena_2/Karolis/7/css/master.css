@@ -1,0 +1,11 @@
+article {border: solid 2px #333}
+.vienas h2 {color: red;}
+    .vienas p {background-color: red;}
+.du h2 {color: blue;}
+    .du p {background-color: blue}
+.trys h2 {color: green;}
+    .trys p {background-color: green;}
+.ket h2 {color: orange;}
+    .ket p {background-color: orange;}
+.pen h2 {color: lightblue;}
+    .pen p {background-color: lightblue;}

@@ -1,0 +1,44 @@
+.remelis {
+    border: 2px solid grey;
+    margin: 2px
+}
+
+.vienas {
+    color: blue;
+}
+
+.du {
+    color: red;
+}
+
+.trys {
+    color: green;
+}
+
+.keturi {
+    color: #ff5599;
+}
+
+.penki {
+    color: violet;
+}
+
+.one {
+    background-color: yellow;
+}
+
+.two {
+    background-color: rgb(255, 80, 10);
+}
+
+.three {
+    background-color: blue;
+}
+
+.four {
+    background-color: #8877AA;
+}
+
+.five {
+    background-color: #FF4455;
+}

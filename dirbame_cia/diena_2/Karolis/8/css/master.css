@@ -1,0 +1,15 @@
+
+.float1 {
+    height: 200px;
+    background: blue;
+    float: left;
+    width: 40%;
+}
+.float2 {
+    height: 300px;
+    background-color: green;
+    float: right;
+    width: 40%;
+}
+.close {clear: both;
+        content: "";}}

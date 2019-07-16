@@ -1,0 +1,44 @@
+article{
+    border: 2px solid #333;
+    margin-bottom: 1%;
+}
+
+article.one{
+    background-color: #FFE4C4;
+}
+
+.one h2{
+    color: 	#0000FF;
+}
+
+article.two{
+    background-color: #FFEBCD;
+}
+
+.two h2{
+    color: #8A2BE2;
+}
+
+article.three{
+    background-color: #DCDCDC;
+}
+
+.three h2{
+    color: #DC143C;
+}
+
+article.four{
+    background-color: #FFDEAD;
+}
+
+.four h2{
+    color: 	#008B8B;
+}
+
+article.five{
+    background-color: #FFC0CB;
+}
+
+.five h2{
+    color: #fff;
+}
