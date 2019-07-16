@@ -1,0 +1,23 @@
+Uzduotis
+Css faile draudziama kurtis klases!
+Css faile suprogramuoti, kad:
+1) visi divia isskyrus apatini nusisdazytu zaliai
+2) pirmas h2 elmentas nusisdazytu melynai
+==========================
+HTML
+
+        <section>
+            <div class="">
+                <h2> AAA </h2>
+            </div>
+            <div class="">
+                <h3> BBB </h3>
+            </div>
+
+            <h2> CCC </h2>
+        </section>
+        <!-- -----------end section---------------- -->
+        <div class="">
+            <h3>  DDD </h3>
+        </div>
+=======================================

@@ -1,10 +1,12 @@
 /*  komentaras */
-h1 {
-    color: red;
+
+section div {
+    background-color: green;
 }
-h1,
-h2,
-h3,
-h4 {
-    color: red;
+section div  h2 {
+    background-color: blue;
+}
+
+div  h2 {
+   background-color: orange;
 }
