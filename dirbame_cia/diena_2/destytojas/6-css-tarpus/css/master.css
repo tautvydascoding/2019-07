@@ -1,0 +1,12 @@
+/*  komentaras */
+
+section div {
+    background-color: green;
+}
+section div  h2 {
+    background-color: blue;
+}
+
+div  h2 {
+   background-color: orange;
+}
