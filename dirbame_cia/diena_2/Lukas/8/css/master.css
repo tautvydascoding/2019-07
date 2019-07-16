@@ -1,0 +1,23 @@
+.fonas-r {
+    border: 2px solid black;
+    background-color: red;
+}
+
+
+.fonas-m {
+    border: 2px solid black;
+    background-color: blue;
+}
+
+.plotis-40 {
+    width: 40%;
+}
+
+.float-i-kaire {
+    float: left;
+}
+
+.isjungiu-float {
+    clear: both;
+    content: "";
+}
