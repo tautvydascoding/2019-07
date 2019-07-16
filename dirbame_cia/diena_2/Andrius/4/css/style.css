@@ -1,0 +1,10 @@
+section div{
+    background-color: green;
+    height: 100px;
+}
+
+section div h2 {background-color: blue;}
+
+section {border: solid;}
+
+div:last-child{border: solid;}

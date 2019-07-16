@@ -1,0 +1,10 @@
+/*  komentaras */
+
+.fonas-r {    background-color: red;      }
+.fonas-z {    background-color: green;   }
+.fonas-m {    background-color: blue;    }
+.fonas-o {    background-color: orange;   }
+
+article {
+    border: solid 2px #f2f2f2;
+}
