@@ -1,0 +1,12 @@
+
+h2 {margin-top: 50px; margin-left: 50px}
+
+
+.fonas1 {background-color: grey;
+        height: 800px; width: 25%}
+.fonas2 {background-color: #ADFF2F;
+        width: 75%; height: 200px}
+.fonas3 {background-color: white;
+        width: 75%; height: 400px}
+.float-desine {float: right; }
+.float-kaire {float: left;}

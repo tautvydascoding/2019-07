@@ -1,0 +1,16 @@
+
+h2 {background-color: red}
+
+article {margin-top: 60px;
+        margin-right: 60px}
+
+
+.blokas { height: 200px;
+          background-color: lightblue;
+          width: 150px;
+       font-size: 10px;
+   text-align: center;}
+   article {  float: left;}
+ .isjungiu-float {clear: both; content: ""}
+.spalva1 {background-color: green}
+.spalva2 {background-color: blue}
