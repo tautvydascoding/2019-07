@@ -1,0 +1,10 @@
+/* komentaras - kodel nesigauna? */
+article {border: solid 4px #323}
+.fonas-r {background-color: red;}
+    .fonas-r h2 {color: orange}
+.fonas-z {background-color: green;}
+    .fonas-z h2 {color: #F5FFFA}
+.fonas-m {background-color: blue;}
+    .fonas-m h2 {color: #FFFF00}
+.fonas-o {background-color: orange;}
+    .fonas-o h2 {color: #66b8ff}
