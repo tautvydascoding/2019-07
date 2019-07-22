@@ -9,7 +9,7 @@ header{
     width: 95%;
 }
 
-h1{
+h2, h1 {
     font-family: 'Squada One', cursive;
     font-size: 3rem;
     text-align: center;
@@ -18,7 +18,7 @@ h1{
     letter-spacing: 2px;
 }
 
-h2{
+h3{
     font-family: 'Squada One', cursive;
     font-size: 2rem;
     margin-left: 10px;
@@ -47,7 +47,7 @@ ul.menu li{
     cursor: pointer;
     text-transform: uppercase;
     display: inline-block;
-    margin: 0 120px;
+    margin: 0 119px;
 }
 
 #searchBox{
