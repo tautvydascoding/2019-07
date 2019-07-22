@@ -1,0 +1,125 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: 0 auto;
+    width: 95%;
+}
+
+h2, h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px auto;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h3{
+    font-family: 'Squada One', cursive;
+    font-size: 2rem;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+nav{
+    background-color: #ffd9cc;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+}
+
+ul.menu{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+    float: left;
+    width: 70%;
+}
+
+ul.menu li{
+    font-size: 1.1rem;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 119px;
+}
+
+#searchBox{
+    float: right;
+    width: 30%;
+    margin: 20px 0;
+}
+
+button{
+    background: #333;
+    border: none;
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input{
+    width: 400px;
+    height: 34px;
+}
+
+.wrapper{
+    margin: 10px auto;
+    width: 95%;
+    height: 730px;
+}
+
+.content{
+    float: left;
+    width: 86.5%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #ddd;
+}
+
+.intro {
+    text-align: justify;
+    margin: 30px 10px;
+}
+
+.subsection {
+    text-align: justify;
+    margin: 0 10px;
+}
+
+.sidebar{
+    background-color: #ffd9cc;
+    float: right;
+    width: 13%;
+    height: 100%;
+}
+
+ul.links li{
+    margin: 20px auto;
+}
+
+.clearFloat{
+    content: "";
+    clear: both;
+}
+
+footer{
+    background-color: #d9d9d9;
+    width: 95%;
+    height: 100px;
+    margin: 10px auto;
+}
+
+footer p{
+    margin: 0;
+    padding: 40px 0 0 20px;
+}
