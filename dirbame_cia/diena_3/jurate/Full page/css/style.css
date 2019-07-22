@@ -41,7 +41,7 @@ ul.menu li{
     color: #333;
     cursor: pointer;
     text-transform: uppercase;
-    display: inline;
+    display: inline-block;
     margin: 0 120px;
 }
 
