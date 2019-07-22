@@ -1,0 +1,22 @@
+
+
+article {width: 25%}
+section {background-color: magenta; height: 800px}
+.spalva1 {background-color: orange}
+.spalva2 {background-color: yellow}
+.spalva3 {background-color: lightgreen}
+.spalva4 {background-color: pink}
+.stumt-kairen {float: left;}
+.isjungiu-float {clear: both; content: none;}
+button {
+  background-color: cyan;
+  border: none;
+  color: blue;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 40px;
+  border-radius: 12px;
+}

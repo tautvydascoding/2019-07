@@ -1,0 +1,18 @@
+
+article {width: 100px; height: 100px;
+        display: inline-block;
+     background-color: red}
+
+     * {
+       padding:0px;
+       margin:0px;
+     }
+
+    .sp1 {background-color: green}
+    .sp2 {background-color: olive}
+    .sp3 {background-color: aqua}
+    .sp4 {background-color: tomato}
+    .sp5 {background-color: lightgreen}
+    .sp6 {background-color: violet}
+    .sp7 {background-color: coral}
+    .sp8 {background-color: deeppink}
