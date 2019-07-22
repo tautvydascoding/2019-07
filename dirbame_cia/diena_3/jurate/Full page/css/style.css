@@ -4,6 +4,11 @@ body{
     padding: 0;
 }
 
+header{
+    margin: 0 auto;
+    width: 95%;
+}
+
 h1{
     font-family: 'Squada One', cursive;
     font-size: 3rem;
@@ -37,7 +42,7 @@ ul.menu{
 }
 
 ul.menu li{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #333;
     cursor: pointer;
     text-transform: uppercase;
@@ -67,8 +72,8 @@ input{
 }
 
 .wrapper{
-    margin: 10px 0;
-    width: 100%;
+    margin: 10px auto;
+    width: 95%;
     height: 730px;
 }
 
@@ -78,6 +83,7 @@ input{
     margin: 0;
     padding: 0;
     height: 100%;
+    background: #ddd;
 }
 
 .intro {
@@ -108,8 +114,9 @@ ul.links li{
 
 footer{
     background-color: #d9d9d9;
-    width: 100%;
+    width: 95%;
     height: 100px;
+    margin: 10px auto;
 }
 
 footer p{
