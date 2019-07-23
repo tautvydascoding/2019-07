@@ -45,5 +45,10 @@ p {
 .fonas-o { background-color: orange; }
 
 
+.isjungiu-float {
+    clear: both;
+    content: "";
+}
+
 
 /*  */

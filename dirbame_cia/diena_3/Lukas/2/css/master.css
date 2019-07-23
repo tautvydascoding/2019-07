@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: auto;
+    background-color: gray;
+}
+
+body {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+header {
+    background-color: pink;
+    height: 84px;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+main {
+    background-color: white;
+    min-height: 200px; /* mazesnis nei 200px jau nebus, bet jei bus daugiau kazko, tai issiples */
+    width: 74%;
+    margin-right: 1%;
+}
+
+main h2 {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+main h3 {
+    margin-left: 10px;
+}
+
+aside {
+    background-color: pink;
+    min-height: 200px; /* mazesnis nei 200px jau nebus, bet jei bus daugiau kazko, tai issiples */
+    width: 25%;
+    /* triukas, automatiskai dideja */
+    padding-bottom: 9999px;
+    margin-bottom: -9999px; /* turi but su minus, skaiciai turi sutapti */
+}
+
+footer {
+    background-color: red;
+    min-height: 120px;
+    width: 100%;
+}
+
+/* Nav */
+
+nav {
+    width: 65%;
+    padding-top: 26px;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav li {
+    width: 25%;
+    font-size: 24px;
+    list-style: none;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+aside h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover { /* uzvedus pele ant */
+    color: orange;
+    text-decoration: none;
+}
+
+a:active { /* paspaudus, kol neatleidi peles */
+    color: black;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    padding: 10px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: red;
+    color: black;
+}
+
+/* Nav end */
+
+.wrapper {
+    overflow: hidden;
+    margin-bottom: 1%;
+}
+
+.paieska input {
+    width: 75%;
+    padding-left: 10px;
+}
+
+.paieska button {
+    width: 20%;
+}
+
+.paieska {
+    background-color: pink;
+    width: 35%;
+    padding-top: 28px;
+}
+
+.float {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+    content: "";
+}

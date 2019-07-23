@@ -1,0 +1,143 @@
+/* box-sizing elementas ma=ai naudojamas, bet del meniu procentu islyginimo */
+* {
+    box-sizing: border-box;
+}
+/* --------- */
+html {
+    /* height uzdedam auto, nes gali atsirasti balta juosta virsuje
+    tai dedam tik html elementui */
+    height: auto;
+    background-color: #f3f3f3;
+}
+body {
+    width: 1200px;
+    /* centravimas visos svetaines
+    cia svarbu isidemeti */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f3f3f3;
+}
+h1 {
+    text-align: center;
+    color: red;
+    background-color: #f3f3f3;
+    margin-bottom: 0px;
+}
+/* kažkodėl neveikia? */
+h1,
+h2,
+h3,
+h4, {
+    font-family: 'Montserrat', 'Ariel', sans-serif;
+}
+
+.aukstis-100 {
+    height: 100px;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 300px;
+}
+.aukstis-500 {
+    height: 500px;
+}
+header {
+    background-color: pink;
+    height: 84px;
+    width: 100%;
+}
+main {
+    background-color: white;
+    min-width: 200px;
+    width: 74%;
+    margin-right: 1%;
+    padding: 25px 10px 15px 10px
+
+}
+aside {
+    background-color: pink;
+    min-width: 200px;
+    width: 25%;
+    /* triukas automatiskai dideja */
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+footer {
+    background-color: white;
+    min-height: 120px;
+    width: 100%;
+}
+/* sekancios yra isgalvotos funkcijos, jos rasomos zeliau */
+.float-kaire {
+    float: left;
+}
+.isjungiu-float {
+    clear: both;
+    content: "";
+}
+
+.wrapper {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /* "tetis" paslepia kas iseina uz jo ribu */
+    overflow: hidden;
+}
+
+.paieska input {
+    width: 75%;
+    padding-left: 10px;
+}
+.paieska button {
+    width: 20%
+}
+
+/* ----meniu-----*/
+nav {
+    width: 65%;
+}
+nav ul {
+    padding-left: 0;
+    padding-top: 25px;
+}
+nav li {
+    width: 25%;
+    font-size: 25px;
+    /* border: solid 1px red; */
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+/* uzvedus pele ant nuorodos pasikeicia uorodos teksto spalva... */
+a:hover {
+    color: orange;
+    text-decoration: none;
+}
+/* paspaudus pele ant nuorodos pasikeicia nuorodos teksto spalva... */
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* --------end meniu------ */
+.paieska {
+    background-color: pink;
+    width: 35%;
+    padding-top: 26px
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+/* nesigavo.... */
+button:hover {
+    background-color: white;
+    color: black;
+}
