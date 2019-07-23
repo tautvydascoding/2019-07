@@ -1,0 +1,14 @@
+.navbar{
+    background: #ccc;
+    height: 500px;
+}
+
+.header, .footer {
+    background: pink;
+    height: 100px;
+}
+
+.main{
+    background: #f4f4f4;
+    height: 300px;
+}
