@@ -1,3 +1,6 @@
+console.log("labas");
+
+
 // ==============patarimai==========
 // reiksme  - kintamasis  / variable
 // "reiksme" - tekstas/ reiksme/ value
