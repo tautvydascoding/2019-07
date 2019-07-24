@@ -1,0 +1,9 @@
+h1 {color: red}
+.col-md-3 {background-color: lightblue;}
+.col-md-9 {background-color: blue;}
+.row1 {background-color: green;
+    height:50px}
+.row2 {background-color: lightgrey;
+    height: 200px;}
+.row3 {background-color: green;
+    height: 100px;}

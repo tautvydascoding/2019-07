@@ -1,0 +1,11 @@
+h1 {color: red;}
+.col-md-3 {background-color: lightblue;}
+.col-md-6 {background-color: blue;}
+.row {background-color: orange;
+    height:100px;}
+.row1 {background-color: orange;
+    height:50px;}
+.row2 {background-color: yellow;
+    height: 200px;}
+.row3 {background-color: red;
+    height: 100px;}
