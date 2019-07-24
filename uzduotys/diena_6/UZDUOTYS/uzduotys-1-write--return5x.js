@@ -1,7 +1,8 @@
 // ==============patarimai==========
-// reiksme  - kintamasis  / variable
-// "reiksme" - tekstas/ reiksme/ value
-// reiksme() - f-jos paleidimas
+reiksme  - kintamasis  / variable
+"reiksme" - tekstas/ reiksme/ value
+reiksme() - f-jos paleidimas
+function reiksme() - f-jos kurimas
 // =============================
 
 
