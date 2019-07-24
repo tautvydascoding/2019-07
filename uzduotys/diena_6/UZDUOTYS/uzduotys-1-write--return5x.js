@@ -2,6 +2,7 @@
 // reiksme  - kintamasis  / variable
 // "reiksme" - tekstas/ reiksme/ value
 // reiksme() - f-jos paleidimas
+// function reiksme() - f-jos kurimas
 // =============================
 
 
