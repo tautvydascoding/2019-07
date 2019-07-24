@@ -1,29 +1,19 @@
-.container-fluid, .sidebar, .row {
-    margin: 0;
-    padding: 0;
-}
-
-.content{
-    height: 720px;
-    margin: 0;
-}
-
-.header, .footer {
-    background: #33ff33;
+.header{
+    background: green;
     height: 100px;
 }
 
+.navi, .advert {
+    background: green;
+    height: 300px;
+}
+
 .article{
-    background: #33ff33;
-    height: 100%;
+    background: green;
+    height: 400px;
 }
 
-.nav {
-    background: #33ff33;
-    height: 50%;
-}
-
-.ads{
-    background: #33ff33;
-    height: 49%;
+.footer{
+    background: green;
+    height: 200px;
 }
