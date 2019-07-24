@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.plotis-30 {
+    height: 100px;
+    width: 30%;
+    float: left;
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+}
+
+.plotis-45 {
+    height: 100px;
+    margin: 10px;
+    width: 45%;
+    float: left;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.plotis-100 {
+    height: 100px;
+    width: calc(100% - 4px);
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.float {
+
+}
+.fonas-blue {
+    background-color: blue;
+}
+
+.fonas-green {
+    background-color: green;
+}
+
+.fonas-pink {
+    background-color: pink;
+}
+
+.fonas-yellow {
+    background-color: yellow;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.clear {
+    clear: both;
+    content: "";
+}

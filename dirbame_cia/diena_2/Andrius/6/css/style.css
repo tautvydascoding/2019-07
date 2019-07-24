@@ -1,43 +1,106 @@
-ul {
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot');
+}
+
+html{
+     font-family: 'MyWebFont', Fallback, sans-serif;
+}
+.navBaras {
+
     list-style-type: none;
-    margin: 0px 0px;
     background-color: pink;
     overflow: hidden;
-    width: 60%;
+    width: 50%;
+    float: left;
+    margin-left: 10%;
+    padding-right: 0px;
+    margin-right: 0px;
+
+}
+header li {
     float: left;
 }
-li {
-    float: left;
-}
-li a {
+header li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 15px 16px;
+    padding: 30px;
+    padding-right: 45px;
+    padding-left: 45px;
+    text-decoration: none;
 }
-li a:hover {
+header li a:hover {
     background-color: yellow;
 }
-li input {
+header li input {
     margin-top: 8px;
-    padding-right: 20px;
+    padding-right: 0px;
     text-align: center;
 }
 .Paieska{
     background-color: pink;
-    float: right;
-    width: 37%;
-    margin-bottom: 20%;
-    margin-left: 0;
-    padding-left: 5.5px;
+    float: left;
+    width: 26%;
+    padding: 15.5px;
+    margin-top: 16px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 10%;
 
 }
 form input{
     margin-top: 8.5px;
-    margin-bottom: 8.5px;
+    margin-bottom: 0px;
+    padding-bottom: 9px;
     padding-top: 10px;
     text-align: center;
 }
 header{
-    /*max-height: 60px;*/
+    text-align: center;
+    padding-bottom: 5%;
+}
+.Mygtukas{
+    width: 20%;
+    text-align: center;
+}
+.paragrafas{
+    margin-left: 10%;
+    margin-right: 1%;
+    background-color: white;
+    width: 60%;
+    float:  left;
+    padding-left: 1%;
+
+}
+.pagrindinis{
+    background-color: grey;
+}
+h1{
+    text-align: center;
+}
+.soninisBaras{
+    width: 15%;
+    float: left;
+    background-color: pink;
+    padding-right: 2.5%;
+    text-align: center;
+}
+.sarasas{
+    padding-bottom: 130%;
+}
+.float-clear{
+    clear: both;
+}
+.copyright{
+    font-family: 'Playfair Display',serif;
+    background-color: white;
+    margin-top: 1%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    margin-left: 10%;
+    width: 79.5%;
+
 }

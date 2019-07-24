@@ -1,0 +1,74 @@
+body{
+    background-color: grey;
+}
+.Header{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+
+}
+.Header ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+.Header li {
+    float: left;
+    width: 19%;
+    background-color: lightblue;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.Header li:hover {
+    background-color: blue;
+}
+.float_null{
+    clear: both;
+}
+
+.paragrafas{
+    margin-top: 1%;
+    margin-left: 17.5%;
+    float: left;
+    background-color: white;
+    width: 50%;
+    
+}
+
+.sideBar{
+    background-color: pink;
+    width: 12%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 5%;
+    max-height: 3%;
+    overflow: auto;
+
+}
+.Naujienos{
+    overflow: hidden;
+}
+
+.Naujienos ul li{
+    list-style-type: none;
+    padding-top: 5%;
+
+}
+
+.dropDownContent{
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 12.7%;
+}
+.dropDownContent a {
+  color: black;
+  padding: 15% 19%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.show{
+    display: block;
+}

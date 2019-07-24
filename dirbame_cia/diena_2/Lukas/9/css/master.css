@@ -10,6 +10,7 @@ h1 {
 .plotis-30-fonas {
     width: 30.666%;
     background-color: grey;
+    position: relative;
 }
 
 .float {
@@ -57,4 +58,8 @@ p {
 
 .fonas-g {
     background-color: yellow;
+}
+
+h2 {
+    position: absolute;
 }
