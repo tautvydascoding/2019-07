@@ -42,12 +42,20 @@ ul.menu{
 }
 
 ul.menu li{
-    font-size: 1.1rem;
-    color: #333;
     cursor: pointer;
     text-transform: uppercase;
     display: inline-block;
     margin: 0 119px;
+}
+
+ul.menu a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+ul.menu a:hover{
+    color: #fff;
 }
 
 #searchBox{
@@ -74,7 +82,7 @@ input{
 .wrapper{
     margin: 10px auto;
     width: 95%;
-    height: 730px;
+    height: 700px;
 }
 
 .content{
@@ -103,8 +111,21 @@ input{
     height: 100%;
 }
 
+.links{
+    padding: 10px 25px;
+}
+
 ul.links li{
-    margin: 20px auto;
+    margin: 20px 10px;
+}
+
+ul.links a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul.links a:hover{
+    color: #fff;
 }
 
 .clearFloat{
@@ -115,11 +136,11 @@ ul.links li{
 footer{
     background-color: #d9d9d9;
     width: 95%;
-    height: 100px;
-    margin: 10px auto;
+    height: 60px;
+    margin: 5px auto;
 }
 
 footer p{
     margin: 0;
-    padding: 40px 0 0 20px;
+    padding: 20px 20px;
 }

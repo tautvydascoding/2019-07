@@ -1,0 +1,19 @@
+.header, .footer{
+    background: yellow;
+    height: 100px;
+}
+
+.navi{
+    height: 500px;
+    background: yellow;
+}
+
+.art{
+    background: yellow;
+    height: 300px;
+}
+
+.addd{
+    background: yellow;
+    height: 200px;
+}
