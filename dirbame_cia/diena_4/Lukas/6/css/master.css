@@ -13,3 +13,13 @@
 .aukstis-500 {
     height: 500px;
 }
+
+.specissue {
+
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+
+.specissue-2 {
+    overflow: hidden;
+}
