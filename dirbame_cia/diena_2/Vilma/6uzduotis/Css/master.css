@@ -1,0 +1,29 @@
+
+
+.fonas-zalias {
+background-color: green;
+}
+.fonas-melynas {
+background-color: blue;
+}
+.fonas-pilkas {
+background-color: gray;
+}
+.fonas-raudonas {
+background-color: red;
+}
+.fonas-geltonas {
+background-color: yellow;
+}
+.fonas-zydras {
+background-color: lightblue;
+}
+article {
+    border: solid 2px #2f3a7b;
+}
+.tekstas-z {color: green;}
+.tekstas-r {color: red;}
+.tekstas-g {color: yellow;}
+.tekstas-p {color: grey;}
+.tekstas-zy {color: lightblue;}
+.tekstas-m{color: blue;}

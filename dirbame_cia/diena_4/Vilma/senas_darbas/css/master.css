@@ -1,0 +1,23 @@
+p {font-weight: bold; font-size: 40px; height: 200px}
+
+div {margin: 10px}
+.plotis-30 {width: 30%;}
+
+.plotis-45 {width: 45%}
+
+.plotis-100 {width: 100%}
+
+.float-kaire {float: left;}
+
+.stop-float {clear: both; content: "";}
+
+.fonas-blue {background-color: cyan;}
+
+.fonas-green {background-color: green;}
+
+.fonas-pink {background-color: pink;}
+
+.remas-1 {border: 2px solid  blue;}
+.remas-2 {border: 2px solid green;}
+.remas-3 {border: 2px solid yellow;}
+.remas-4 {border: 2px solid pink;}
