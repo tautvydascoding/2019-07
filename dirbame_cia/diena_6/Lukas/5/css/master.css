@@ -1,0 +1,11 @@
+article {
+    border: solid 2px red;
+}
+
+h3 {
+    border: solid 2px black;
+}
+
+div li {
+    color: green;
+}

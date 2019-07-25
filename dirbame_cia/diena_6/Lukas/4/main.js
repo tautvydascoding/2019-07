@@ -123,19 +123,21 @@ let age = 6;
 if (age < 7 || age > 65) {
     document.querySelector("h1").innerHTML += "Sokoladiniai zuikuciai 20% nuolaida";
     if (age < 7) {
-        document.querySelector("body").innerHTML += "Pliusines varles";
-    } else if (age >= 7 && age < 14) {
-        document.querySelector("body").innerHTML += "Mini telefonai";
-    } else if (age <= 14 && age < 18) {
-        document.querySelector("body").innerHTML += "new Music App";
-    } else if (age >= 18 && age < 24) {
-        document.querySelector("body").innerHTML += "Stok i Sauliu sajunga";
-    } else if (age >= 24 && age < 65) {
-        document.querySelector("body").innerHTML += "Pensijos kaupimas - uzsiregistruok";
+        console.log("Pliusines varles");
     } else {
-        document.querySelector("body").innerHTML += "Kelione i Birstona";
+        console.log("Kelione i Birstona");
+
     }
+} else if (age < 14) {
+    console.log("Mini telefonai");
+} else if (age < 18) {
+    console.log("new Music app");
+} else if (age < 24) {
+    console.log("stok i sauliu sajunga");
+} else if (age <= 65) {
+    console.log("pensija");
 }
+
 
 // 2 UZDUOTIS
 // susikurti kintamaji:  klietoVardas = "Jonas"     kurio reiksme lyginsime
@@ -148,7 +150,7 @@ if (age < 7 || age > 65) {
 let klientoVardas = "Jonas";
 let vardas11 = "Tomas";
 let vardas22 = "Paulius";
-let vardas3 = "Airidas";
+let vardas33 = "Airidas";
 
 if (klientoVardas == vardas11) {
     document.querySelector("body").innerHTML += "Masinoms 10% nuolaida";
@@ -165,4 +167,9 @@ if (klientoVardas == vardas11) {
 // kai 'klietoTipas' yra "bronze" - isvesti " 15% nuolaida"
 // kai 'klietoTipas' yra "silver" - isvesti " 30% nuolaida"
 // kai 'klietoTipas' yra   bet koks kitas - isvesti " 5% nuolaida  "
-//
+
+let b = "bronze";
+let s = "silver";
+let g = "gold";
+
+let klientoTipas;
