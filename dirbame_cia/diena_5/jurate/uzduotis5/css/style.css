@@ -1,0 +1,19 @@
+.header{
+    background: green;
+    height: 100px;
+}
+
+.navi, .advert {
+    background: green;
+    height: 300px;
+}
+
+.article{
+    background: green;
+    height: 400px;
+}
+
+.footer{
+    background: green;
+    height: 200px;
+}
