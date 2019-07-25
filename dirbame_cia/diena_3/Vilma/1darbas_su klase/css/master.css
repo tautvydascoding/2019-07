@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ------- */
+
+html {background-color: lightgrey;
+        height: auto;}
+
+body { width: 90%;
+margin-left: auto;
+    margin-right: auto;}
+
+
+h1 {text-align: center;
+    margin-bottom: 0;
+font-family: 'DM Serif Text', serif;}
+
+h2 {font-family: 'Suez One', serif;
+text-align: center}
+
+header {background-color: magenta;
+    height: 84px;
+    width: 100%
+    }
+main {background-color: white;
+    min-height: 200px;
+    width: 73%;
+    margin-right: 2%;
+    }
+nav {width: 65%;
+    padding-top: 26px;
+    padding-left: 0;
+        }
+section {margin-top: 2%;
+        margin-bottom: 1%;
+overflow: hidden;}
+article {font-family: 'Gabriela', serif;}
+
+aside {background-color: magenta;
+    min-height: 200px;
+    width: 25%;
+    /* automatinis didinimas */
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    }
+main {padding: 25px 15px;
+    }
+footer {background-color: white;
+    min-height: 84px;
+    width: 100% ;}
+
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        color: white;
+    }
+
+.fl-kaire {float: left;}
+.stop-fl {clear: both; content: "";}
+.paieska {
+            width: 35%;
+        padding-top: 26px;}
+.paieska input {
+    width: 75%;
+    padding-left: 20px;
+}
+.paieska button {
+    width: 20%;
+
+}
+nav li {
+  padding-left: 0;
+  /* width: 30%; */
+  font-size: 20px;
+  list-style-type: none;
+  text-align: center;
+    }
+
+button {background-color: black;
+color: white;
+border: none;
+border-radius: 10px;}
+
+button:hover {background-color: white;
+color: black;}
