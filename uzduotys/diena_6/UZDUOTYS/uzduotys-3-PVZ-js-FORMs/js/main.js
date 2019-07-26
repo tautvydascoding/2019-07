@@ -2,20 +2,13 @@ console.log(" Labas ");
 
 // UZDUOTIS
 // Issimeginti komandas:
- 
- 
 
-
-
-
-
- 
-
+  
 
 function keisti() {
 
 	 alert("pradzia");
- 
+
 	//suradimas
 	let ivedimoLaukasVardas = document.querySelector('#vardas');  // surandame HTML elemnta
 	//test
@@ -34,7 +27,7 @@ function keisti() {
 
 	   //----ne ivedimo lauku keitimas -  --------
 
-		 
+
 		 let manoP = document.querySelector('p');
 		manoP.innerHTML = 	"ivedet: " + ivedimoLaukasVardas.value;	 //innerHTML - keicia surasto HTML elemento vidu
 }

@@ -1,0 +1,49 @@
+
+h1 {
+    color: red;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2 {
+    border-bottom: solid 2px #000;
+    border-left: solid 2px #000;
+    width: 160px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.aukstis-100 {
+    height: 100px;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 300px;
+}
+.aukstis-500 {
+    height: 500px;
+}
+.dezute {
+   background-color: #f3f3f3;
+   border:  solid 2px #000;
+   width: 30.666%;
+   margin-left: 2%;
+
+   position: relative;
+}
+p {
+    margin-top: 61px;
+}
+.float-kaire {
+    float: left;
+}
+.fonas-r { background-color: red; }
+.fonas-z { background-color: green; }
+.fonas-o { background-color: orange; }
+
+
+
+/*  */

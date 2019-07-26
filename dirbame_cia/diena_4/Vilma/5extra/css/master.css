@@ -1,0 +1,16 @@
+h1 {
+    color: purple;
+}
+
+.aukstis-500 {
+    height: 500px;
+    
+}
+.aukstis-100 {
+    height: 100px;
+    background-color: lightpink;
+}
+.aukstis-300 {
+    height: 300px;
+    background-color: lightgreen;
+}
