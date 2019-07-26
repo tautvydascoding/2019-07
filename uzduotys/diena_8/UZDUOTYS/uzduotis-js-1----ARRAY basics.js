@@ -14,4 +14,4 @@
 
 	// 3.1  padaryti 3) uzdaviniui f-ja sukeistiMasyvo2elementus(x, y)
 
-	var prekiautojai = []; // empty array
+	let prekiautojai = []; // empty array 
