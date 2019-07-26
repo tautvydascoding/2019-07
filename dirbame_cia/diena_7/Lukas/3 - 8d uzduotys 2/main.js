@@ -38,6 +38,12 @@ document.querySelector("body").innerHTML += "<article></article>";
 document.querySelector("article").innerHTML += "<h2>" + masina[1] + "</h2>";
 document.querySelector("article").innerHTML += "<div>" + masina[0] + "</div>";
 document.querySelector("article").innerHTML += "<span>" + masina[4] + " Rida " + masina[3] + "</span>";
-document.querySelector("article").innerHTML += '<button type"button">' + masina[2] + '</button>'
+document.querySelector("article").innerHTML += '<button type="submit">' + masina[2] + '</button>'
+
+// isvedimas su ciklu
+
+for(var i = 0; i < masina.length; i++) {
+    console.log(masina[i]);
+}
 
 //=============bootstrap---sm-md-lg-xl (30-60m)==========
