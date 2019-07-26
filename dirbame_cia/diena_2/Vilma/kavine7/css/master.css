@@ -1,0 +1,24 @@
+
+
+h1 {
+    color: orange; text-align: center; margin-top: 30px; margin-bottom: 30px;
+}
+h2 {text-align: right;
+    border-bottom:  solid 3px #000;
+    border-left: solid 3px #000;
+    width: 160px;
+    position: absolute; top: 0; right: 0}
+        }
+article {}
+.dezute {
+    background-color: #f3f3f3;
+    border: solid 3px #000;
+    width: 30.66%;
+    margin-left: 2%;
+    position: relative;
+}
+.float-kaire { float: left;}
+.isjungiu-float {clear: both; content: ""}
+.spalva1 {background-color: pink}
+.spalva2 {background-color: red; color: white}
+.spalva3 {background-color: purple}
