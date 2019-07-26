@@ -39,7 +39,7 @@ for(var i = 0; i < 12; i++) {
 // B) nupiesti tuscia lentele paleidiznat f-jas (  antrastine eilute "vardas |  pavarde | amzius" - teks isvesti be f-jos)
 
 function piestiEilute(x) {
-    
+
 }
 
 
@@ -64,9 +64,14 @@ var kiekMenesiu = 10 * 12;
 var menAtlyginimas = 680;
 var algosPokytis = 1;  // 1%
 
-function apskaiciuotiAlga() {
-
+function skaiciuotiAtlygi(alga, men, pokytis) {
+    for(var i = 0; i < men; i++)
+    ats = alga * (pokytis * men);
+    return ats;
 }
+
+let atsakymas = skaiciuotiAtlygi(menAtlyginimas, kiekMenesiu, algosPokytis);
+console.log(atsakymas)
 
 
 // ==============SCSS============================
