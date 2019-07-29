@@ -42,23 +42,47 @@ keliautojas.unshift("ziebtuvelis")
 keliautojas.splice(2,1)
 
 console.log(keliautojas);
-var massive = [];
 // --------GERESNI UZDAVINIAI:
 // 4. sukurti masyva (50 ilgumo) naudojant FOR ir uzpildyti visa skaiciais "0" (kiekvienas stalcius turi but lygus "0");
-// for (i=0 ; i < 50 ; i++){
-//     massive[i] = 0;
+// var massive = [];
+// for (i = 1 ; i < 50 ; i++){             //needs more work, check uploaded shit
+//     if (i % 2 == 0){
+//         massive[i] = 3;}
+//         else{
+//             massive[i] = 1;
+//         }
+// // for (i = 1 ; i < 50 ; i++){          //needs more work, check uploaded shit
+//     if (i % 5 == 0){
+//         massive[i] = 5;
+//     }else{
+//         massive[i] = 1;
+//     }
+// }
 
+// for ( i = 0 ; i < 50 ; i++){
+//
+// }
 // 5.1  sukurti masyva naudojant WHILE (50 ilgumo) ir uzpildyti visa skaiciumi 1
-var i=0;
+var massive = [];
+var i=1;
 while (i<50) {
     massive[i] = 1;
+    if (i % 2 == 0){
+        massive[i] = 3;}
+        else{
+            massive[i] = 1;
+        }
     i++;
 }
 // 5.2: kas antra ^ masyvo elementa pakeisti i "3"
 // [1, 3, 1, 3, 1, 3, 1, 3, 1, 3, ....
-if 
+
 // 5.3: kas 5-ta ^ masyvo elementa pakeisti i "9"
 // [1, 3, 1, 3, 9, 3, 1, 3, 1, 9, ....
+if (i % 5 == 0){
+    massive[i] = 3;}
+
+
 
 
 //=============bootstrap---sm-md-lg-xl (30-60m)==========
