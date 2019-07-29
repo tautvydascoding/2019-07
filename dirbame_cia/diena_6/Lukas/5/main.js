@@ -113,6 +113,8 @@ for(var i = 0; i < 100; i++) {
 // var menAtlyginimas = 680;
 // var algosPokytis = 1;  // 1%
 
+
+
 // ==============SCSS============================
 
 //========= local/global or Frog/Garden =======

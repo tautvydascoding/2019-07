@@ -1,5 +1,5 @@
 // 1 UZDUOTIS
-let zmg = ["Tomas", 21, "Kaunas", 820, true];
+// let zmg = ["Tomas", 21, "Kaunas", 820, true];
 //
 // patikrinti ar zmogus vedes :
 // A) naudoti if  ir "=="
