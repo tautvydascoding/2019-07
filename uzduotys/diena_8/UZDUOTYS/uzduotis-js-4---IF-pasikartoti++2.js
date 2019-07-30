@@ -21,3 +21,8 @@
 // jeigu "false" isvestu : "Sveiki atvykia!"
 
 //  1.3 Jeigu vartotojo tipas 'admin': isvesti ne tik pasisveikinima, bet ir koki nors paveiksliuka
+
+// uzduotis 4
+// 1.1 susikurti tuscia masyva
+// 1.2 uzpildyti masyva "1" (50 stalciu)
+// 1.3 parasyti IF, kuris tikrina ar stalciaus nr. lyginis
