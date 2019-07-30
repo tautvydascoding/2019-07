@@ -44,10 +44,17 @@ if(arRadauVarda ){
 }
 */
 
+
+
+
+
+
+
 // 2 UZDUOTIS (f-ja iekom stalciaus)
 // parasyti funkcija, kuriai davus iekoma zodi , ji suranda jo vieta masyve (stalciaus numeri) ir si   numeri grazina
 // eg: getStalciausNumeris( ieskomasTekstas)
 //reikia ciklo ir po to if ir gauta numeri grazinti su return
+
 function getVardoNumeris(ieskomasTekstas){
     for(let i = 0; i < names.length; i++){
         if(names[i] == ieskomasTekstas){
@@ -58,10 +65,10 @@ function getVardoNumeris(ieskomasTekstas){
     return "neradau"; // arb null; // taip parasom jei nenorim atsakymo undefines ir
 }
 let nrR = getVardoNumeris("Rico"); // ats 25
-let nrT = getVardoNumeris("Tomas"); // ats null, nes tokio vardo sarase nera
+let nrT = getVardoNumeris("Tomas"); // ats null arba "neradau", nes tokio vardo sarase nera
 console.log(nrR, nrT);
 
-// uzduotis:----------------------------
+
 // 3) rasti pavarde masyve esancio  zmogaus vardu "Freida" (pirmojo)
 for(let i = 0; i < names.length; i++){
     if(names[i] == "Freida"){
@@ -71,9 +78,10 @@ for(let i = 0; i < names.length; i++){
 let pilnasVardas = names[37] + " " + lastNames[37];
 console.log(pilnasVardas);
 
-// trumpesnis variantas:
-let nrF = getVardoNumeris("Freida");
-console.log("Freida pavarde yra: ", lastNames[37]);
+// logiškesnis variantas:
+// let nrF = getVardoNumeris("Freida");
+// console.log("Freida pavarde yra: ", lastNames[37]);
+
 
 // 4) rasti visu zmoniu vardu "Rico" pavardes
 for(let i = 0; i < names.length; i++){
@@ -87,7 +95,23 @@ for(let i = 0; i < names.length; i++){
 // B) isvesti ju pavardes ir vardus
 // parasyti cikla, kuris pagal zmoniu numerius suranda tuos zmones is kitu dvieju masyvu.
 
+for(let i = 0; i < ieskomiZmones.length; i++){
+    console.log("Kviečiamų žmonių sąrašo numeris: ", ieskomiZmones[i]); // gavom visus numerius
+    let a = ieskomiZmones[i];
+    console.log(lastNames[a], names[a]);
+}
+// Paaiškinimas: kai susikuriam for cikla, pasiimam masyva ieskomiZmones, atsispausdinam jo reiksmes.
+// Tada atspausdinta masyva priskiriam kintamajam, kad lengvai galetume naudoti
+// Ir tada pasirenkam masyvus, kuriuose norime, kad atspausdintu pavardes ir vardus butent tu masyvo stalciu, kuriu skaiciai sutampa su ieskomiZmones stalciu reiksmemis. 
 
+/* ats turi būti:
+2 - Piper Mccall
+16 - Owen Hays   
+17 - Rosenda Gibson
+18 - Devora Meyer
+19 - Treva Sims
+25 - Rico Montgomery
+*/
 
 // var a = Math.random(); // 0 - 1
 // if ( a <= 0.1) {
