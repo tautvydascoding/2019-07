@@ -44,12 +44,6 @@ if(arRadauVarda ){
 }
 */
 
-
-
-
-
-
-
 // 2 UZDUOTIS (f-ja iekom stalciaus)
 // parasyti funkcija, kuriai davus iekoma zodi , ji suranda jo vieta masyve (stalciaus numeri) ir si   numeri grazina
 // eg: getStalciausNumeris( ieskomasTekstas)
@@ -97,23 +91,11 @@ for(let i = 0; i < names.length; i++){
 
 for(let i = 0; i < ieskomiZmones.length; i++){
     console.log("Kviečiamų žmonių sąrašo numeris: ", ieskomiZmones[i]); // gavom visus numerius
+    // atsispaudinam vardus ir pavardes
     let a = ieskomiZmones[i];
     console.log(lastNames[a], names[a]);
 }
 // Paaiškinimas: kai susikuriam for cikla, pasiimam masyva ieskomiZmones, atsispausdinam jo reiksmes.
-// Tada atspausdinta masyva priskiriam kintamajam, kad lengvai galetume naudoti
+// Tada atspausdinta masyva priskiriam kintamajam, kad lengvai galetume naudoti gautas reiksmes is ciklo
 // Ir tada pasirenkam masyvus, kuriuose norime, kad atspausdintu pavardes ir vardus butent tu masyvo stalciu, kuriu skaiciai sutampa su ieskomiZmones stalciu reiksmemis. 
 
-/* ats turi būti:
-2 - Piper Mccall
-16 - Owen Hays   
-17 - Rosenda Gibson
-18 - Devora Meyer
-19 - Treva Sims
-25 - Rico Montgomery
-*/
-
-// var a = Math.random(); // 0 - 1
-// if ( a <= 0.1) {
-//     console.log("laimejai");
-// }
