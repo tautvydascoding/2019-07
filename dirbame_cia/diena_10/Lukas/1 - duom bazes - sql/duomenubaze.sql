@@ -102,10 +102,14 @@ SELECT * FROM doctors WHERE id < 4;
 -- UZDUOTIS  1.4  (SELECT): isvesti visus gydytojus, bet ne 'Jo'
 SELECT * FROM doctors WHERE NOT name = "Jo";
 -- UZDUOTIS  1.5  (SELECT): isvesti visus paciantus, surikiuotus pagal varda
+SELECT * FROM patients ORDER BY name ASC;
 -- // UZDUOTIS 2: pervadinti gydytoja 'Lili' i 'Litas'
-
+UPDATE doctors SET name = "Litas" WHERE name = "Lili";
 
 
 -- UZDUOTIS UPDATE- pakeisti Koris pavarde i Makalas (suradus pagal id)
+UPDATE patients SET lname = "Makalas" WHERE id = 5;
 -- UZDUOTIS UPDATE- pakeisti Koris pavarde i Paulaitis (suradus pagal id ir pavarde)
+UPDATE patients SET lname = "Paulaitis" WHERE id = 5 && lname = "Makalas";
 -- UZDUOTIS (select LIKE)- paimti visus gydytojus, kuriu pavarde parsideda is "L" raides
+SELECT * FROM doctors WHERE lname LIKE "L%";
