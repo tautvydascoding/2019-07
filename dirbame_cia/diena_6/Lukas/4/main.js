@@ -118,7 +118,7 @@ if (vardas1 == "Tomas" || vardas2 == "Tomas") {
 //      (i 'if' vidu ideti papildoma 'if')
 //      iki 7 metu ir nuo 65 metu papildomai isvesti "Sokoladiniai zuikuciai 20% nuolaida"
 
-let age = 6;
+let age = 9;
 
 if (age < 7 || age > 65) {
     document.querySelector("h1").innerHTML += "Sokoladiniai zuikuciai 20% nuolaida";
