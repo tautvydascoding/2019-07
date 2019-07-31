@@ -11,5 +11,4 @@ INNER JOIN patients
 ON doctors.id = patients.doctor_id;
 
 
-
 //

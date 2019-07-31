@@ -43,8 +43,8 @@ DBCC CHECKIDENT (mytable, RESEED, 0);       // B) budas
 //===========pvz============
 use duomenuBazesPavadinimas;   // pasikeisti DB  pries kuriant lenteles
 
- CREATE TABLE IF NOT EXISTS doctors (
-      id INT UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
+ CREATE TABLE   doctors (
+      id INT       AUTO_INCREMENT    PRIMARY KEY,
       name VARCHAR(30) not NULL,
       lname VARCHAR(30) NOT NULL
 	  );
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS patients (
 
 CREATE TABLE IF NOT EXISTS img (
 	 id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
-	 name VARCHAR(60) not NULL,
+	 name VARCHAR(200) not NULL,
 	 doctor_id INT(6) NOT NULL
 	 );
 

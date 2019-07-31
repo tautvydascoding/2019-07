@@ -6,7 +6,7 @@
 //.val()
 
 var otext = $("h1").text();  // return visu h1 turini
-//console.log("h1 otext: " + otext);
+console.log("h1 otext: " + otext);
 
 var oHTML = $("h1").html();
 //console.log("h1 oHTML: " + oHTML);
