@@ -1,0 +1,17 @@
+1)   MAMP sustabdyti serveri - STOP
+2)  nueiti i :
+C:MAMP/db/mysql/
+ir perkelti is ten :
+"ib_logfile"
+ failus i desctor(jei netycia ju vel prireiktu)
+3) MAMP server - Start
+(jei neveikia - isjungti is ijungti MAMP)
+
+-----------kitas spendimas-------
+
+C:MAMP/db/mysql/
+istinti: visus "mysql-bin" failus
+
+-----------kitas spendimas-------
+C:MAMP/db/mysql/
+istrinti visus failus (isskyrus katalogus)
