@@ -13,3 +13,22 @@ h1 {
 .aukstis-500 {
     height: 500px;
 }
+
+/*  Home  About  Contacts */
+
+li {
+    width: 20%;
+    display: inline-block;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+/*  CSS IF nuo 765 ekrano plocio */
+@media (min-width: 765px) {
+    .antMobilaus {
+        display: none;
+    }
+    .antDesktop {
+        display: block;
+    }
+}
