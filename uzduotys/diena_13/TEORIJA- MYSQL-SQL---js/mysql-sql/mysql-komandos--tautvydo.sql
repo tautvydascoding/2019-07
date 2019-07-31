@@ -146,28 +146,28 @@ INSERT INTO doctors  VALUES  ('', 'Lili', 'Lekso');
 INSERT INTO doctors  VALUES  ('', 'Timy', 'So');
 
 	INSERT INTO patients  VALUES  (NULL, 'Marks', 'Jonh', '2');
-	INSERT INTO patients  VALUES  ('', 'Tom', 'Karlos', '2');
-	INSERT INTO patients  VALUES  ('', 'Aris', 'Tiedo', '1');
-	INSERT INTO patients  VALUES  ('', 'Tom', 'Kopo', '3');
-	INSERT INTO patients  VALUES  ('', 'Co', 'John', '1');
-	INSERT INTO patients  VALUES  ('', 'Tom', 'Naro', '5');
-	INSERT INTO patients  VALUES  ('', 'Lili', 'Jato', '4');
+	INSERT INTO patients  VALUES  (null, 'Tom', 'Karlos', '2');
+	INSERT INTO patients  VALUES  (null, 'Aris', 'Tiedo', '1');
+	INSERT INTO patients  VALUES  (NULL, 'Tom', 'Kopo', '3');
+	INSERT INTO patients  VALUES  (NULL, 'Co', 'John', '1');
+	INSERT INTO patients  VALUES  (null, 'Tom', 'Naro', '5');
+	INSERT INTO patients  VALUES  (null, 'Lili', 'Jato', '4');
 
 
 
 //-------------patients---------------
-	INSERT INTO patients  VALUES  ('', 'Ari', 'Amon', '3');
-	INSERT INTO patients  VALUES  ('', 'Tim', 'Taros', '2');
-	INSERT INTO patients  VALUES  ('', 'Ana', 'Tomson', '2');
-	INSERT INTO patients  VALUES  ('', 'Tom', 'Alis', '3');
-	INSERT INTO patients  VALUES  ('', 'Karis', 'Katis', '1');
-	INSERT INTO patients  VALUES  ('', 'Jo', 'Oporas', '5');
+	INSERT INTO patients  VALUES  (null, 'Ari', 'Amon', '3');
+	INSERT INTO patients  VALUES  (NULL, 'Tim', 'Taros', '2');
+	INSERT INTO patients  VALUES  (NULL, 'Ana', 'Tomson', '2');
+	INSERT INTO patients  VALUES  (NULL, 'Tom', 'Alis', '3');
+	INSERT INTO patients  VALUES  (NULL, 'Karis', 'Katis', '1');
+	INSERT INTO patients  VALUES  (null, 'Jo', 'Oporas', '5');
 //-------------IMG---------------
-INSERT INTO img  VALUES  ('', 'pic-46.jpg', '5');
-INSERT INTO img  VALUES  ('', 'pic-46.PNG', '1');
-INSERT INTO img  VALUES  ('', 'pic-456.jpg', '3');
-INSERT INTO img  VALUES  ('', 'pic-4234234.GIF', '2');
-INSERT INTO img  VALUES  ('', 'pic-4622.GIF', '4');
+INSERT INTO img  VALUES  (NULL, 'pic-46.jpg', '5');
+INSERT INTO img  VALUES  (null, 'pic-46.PNG', '1');
+INSERT INTO img  VALUES  (null, 'pic-456.jpg', '3');
+INSERT INTO img  VALUES  (NULL, 'pic-4234234.GIF', '2');
+INSERT INTO img  VALUES  (NULL, 'pic-4622.GIF', '4');
 
 // uzduotis 1: istrinti gydytoja "Sara"
 // uzduotis 2 : Pakeisti "Timo" varda i "Tomas"

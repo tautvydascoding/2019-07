@@ -21,11 +21,11 @@ CREATE TABLE doctors(
 -- istrinti stulpeli, prideti papildoma, pakeisti stulpelio tipa
 -- ! alter - neredaguoja duomenu (ji keicia tik lenteles, lenteles struktura)
 --                         id     name   lname
-INSERT INTO doctors VALUES ("", "Tim", "Logan");
-INSERT INTO doctors VALUES ("", "Paul", "Leo");
-INSERT INTO doctors VALUES ("", "Ona", "Onutaite");
-INSERT INTO doctors VALUES ("", "Lite", "Rene");
-INSERT INTO doctors VALUES ("", "Koris", "Pitas");
+INSERT INTO doctors VALUES (null, "Tim", "Logan");
+INSERT INTO doctors VALUES (null, "Paul", "Leo");
+INSERT INTO doctors VALUES (null, "Ona", "Onutaite");
+INSERT INTO doctors VALUES (null, "Lite", "Rene");
+INSERT INTO doctors VALUES (null, "Koris", "Pitas");
 -- pasitikrinimas
  SELECT * FROM doctors;
 
@@ -37,13 +37,13 @@ INSERT INTO doctors VALUES ("", "Koris", "Pitas");
          lname  VARCHAR(30),
          doctor_id  INT(6)
  );
-INSERT INTO patients VALUES ("", "Mark", "John", 2);
-INSERT INTO patients VALUES ("", "Tom", "karlos", 2 );
-INSERT INTO patients VALUES ("", "Aris", "Tiedo", 1 );
-INSERT INTO patients VALUES ("", "Tom", "Kori", 3 );
-INSERT INTO patients VALUES ("", "Co", "Jo", 1 );
-INSERT INTO patients VALUES ("", "Tom", "Naro", 5 );
-INSERT INTO patients VALUES ("", "Jili", "Joli", 4 );
+INSERT INTO patients VALUES (null, "Mark", "John", 2);
+INSERT INTO patients VALUES (null, "Tom", "karlos", 2 );
+INSERT INTO patients VALUES (null, "Aris", "Tiedo", 1 );
+INSERT INTO patients VALUES (null, "Tom", "Kori", 3 );
+INSERT INTO patients VALUES (null, "Co", "Jo", 1 );
+INSERT INTO patients VALUES (null, "Tom", "Naro", 5 );
+INSERT INTO patients VALUES (null, "Jili", "Joli", 4 );
  --pasitikrinimnas
  SELECT id, name, lname, doctor_id FROM patients;
 
@@ -69,10 +69,10 @@ CREATE TABLE img (
         name  VARCHAR(100),
         patient_id  INT(6)
 );
-INSERT INTO img VALUES ("", "foto.jpg",  3 );
-INSERT INTO img VALUES ("", "3.jpg",  1 );
-INSERT INTO img VALUES ("", "1.jpg",  1 );
-INSERT INTO img VALUES ("", "3.jpg",  3 );
+INSERT INTO img VALUES (null, "foto.jpg",  3 );
+INSERT INTO img VALUES (null, "3.jpg",  1 );
+INSERT INTO img VALUES (null, "1.jpg",  1 );
+INSERT INTO img VALUES (null, "3.jpg",  3 );
 
 
 

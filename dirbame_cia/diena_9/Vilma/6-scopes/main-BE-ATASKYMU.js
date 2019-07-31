@@ -6,35 +6,35 @@ function suma () {
     let x = 20;
 }
 
-console.log( x );//
+console.log( x );//10
 suma();
-console.log( x );//
+console.log( x );//10
 
 x = 10;
 function suma2 () {
       x = 20;
 }
-console.log( x );//
+console.log( x );//10
 suma2();
-console.log( x );//
+console.log( x );//20
 //-----------------
 x = 10;
 function suma3 (x) {
       x = 20;  //
 }
-console.log( x );
+console.log( x );//10
 suma3(30);
-console.log( x );
+console.log( x );//10
 //-----------------
 x = 10;
 function suma4 (x) {
-      console.log( x );
+      console.log( x );//10
       x = 20;
-      console.log( x );
+      console.log( x );//20
 }
-console.log( x );
+console.log( x );//10
 suma4( x );
-console.log( x );
+console.log( x );//10
 //-----------------
 x = 10;
 function suma5 () {
