@@ -52,10 +52,10 @@ if (arRadau == false){
 // 2 UZDUOTIS (f-ja iekom stalciaus)
 // parasyti funkcija, kuriai davus iekoma zodi , ji suranda jo vieta masyve (stalciaus numeri) ir si   numeri grazina
 // eg: getStalciausNumeris( ieskomasTekstas)
-function getStalciausNumeris(x){
-    return names.IndexOf(x);
-}
-console.log(getStalciausNumeris("Rico"));
+// function getStalciausNumeris(x){
+//     return names.IndexOf(x);
+
+// console.log(getStalciausNumeris("Rico"));
         // uzduotis:----------------------------
 // 3) rasti pavarde masyve esancio  zmogaus vardu "Freida" (pirmojo)
 console.log("----------------------------------");
@@ -93,9 +93,8 @@ console.log("--------------------------------------");
 
 // B) isvesti ju pavardes ir vardus
 for ( z = 0 ; z < ieskomiZmones.length ; z++){
-    var r = names[z];
-    var t = lastNames[z];
-    console.log(r,t);
+    nr = ieskomiZmones[z];
+    console.log("Vardas ir pavarde",names[nr],lastNames[nr]);
 }
 
 
