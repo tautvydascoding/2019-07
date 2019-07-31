@@ -83,6 +83,17 @@ for(var i = 0; i < names.length; i++) {
 
 // 5) Turime masyva su zmoniu nr.  ieskomiZmones = [2, 16, 17, 18, 19, 25];
 // A) atspausdinti visus numerius
+<<<<<<< HEAD
+for(var i = 0; i < ieskomiZmones.length; i++) {
+    console.log(ieskomiZmones[i]);
+}
+// B) isvesti ju pavardes ir vardus
+
+for(var i = 0; i < ieskomiZmones.length; i++) {
+    let a = ieskomiZmones[i];
+    console.log(lastNames[a], names[a]);
+}
+=======
 
 for(var i = 0; i < ieskomiZmones.length; i++) {
     console.log(ieskomiZmones[i]);
@@ -97,6 +108,7 @@ for(var i = 0; i < ieskomiZmones.length; i++) {
     console.log(names[a], lastNames[a]);
 }
 
+>>>>>>> ce3d0d3e8b1e168bf42f3b85e30a9516a947d3dd
 
 // var a = Math.random(); // 0 - 1
 // if ( a <= 0.1) {
