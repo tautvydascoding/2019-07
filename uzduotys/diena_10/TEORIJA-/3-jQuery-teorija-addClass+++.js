@@ -30,9 +30,9 @@ $("button").click(function(){
 
 
 //Given an unordered list with two <li> elements, this example adds the class "item-0" to the first <li> and "item-1" to the second.
-// $( "ul li" ).addClass(function( index ) {
-//    return "item-" + index;
-// });
+$( "ul li" ).addClass(function( index ) {
+   return "item-" + index;
+});
 
 
 // $("h1").addClass( function( index, currentClass ) {
