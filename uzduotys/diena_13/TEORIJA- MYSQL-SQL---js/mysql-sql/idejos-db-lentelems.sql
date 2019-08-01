@@ -15,6 +15,10 @@ id    antraste        turinys   pozicija   ar_rodyti
 1     Musu Istorija    Lorem...  2          true
 2     Ka gaminame?     Lorem...  1         true
 3     Mes spaudoje     Lorem...  3         false
+SELECT * FROM about
+        WHERE ar_rodyti = true
+        ORDER BY pozicija
+        LIMIT 5;
 
 =======vartotoju klausimai ========
 id    vardas   klausimas    tel_1              email
@@ -22,21 +26,21 @@ id    vardas   klausimas    tel_1              email
 2     Julius  Lorem....                   info@pop.com
 
 =======vartotoju atsiliepimai/komentarai ========
-id    vardas   user_id   atsiliepimas/komentaras   ar_rodyti   data              email
-1     Tomas       13      Lorem....                    true     2010-06-06          Tomas@tomas.lt
-2     Julius      64  Lorem....                    false    2010-06-05         julius@julius.lt
+id    vardas   user_id   atsiliepimas/komentaras      ar_rodyti   data              email
+1     Tomas       13        Lorem....                    true     2010-06-06          Tomas@tomas.lt
+2     Julius      64        Lorem....                    false    2010-06-05         julius@julius.lt
 
 ======= Prekes/ straisniai   ========
-id    pavadinimas   aprasymas      kaina    nuolaida  pozicija      data   kiekis
-1     Dviratis       Lorem....     659
-2     Paspirtukas     Lorem....     49.99       5           99999
-3     Rieduciai       Lorem....     359         20          2
+id    pavadinimas   aprasymas      kaina    nuolaida  pozicija      data   kiekis    ar_rodyti
+1     Dviratis       Lorem....      659                                         5       true
+2     Paspirtukas     Lorem....     49.99       5           99999               11       false
+3     Rieduciai       Lorem....     359         20          2                   8       true
 
 ======= Paveiksliukai   ========
-id    pavadinimas   aprasymas              pozicija      prekes_id
-1     foto1.jpg       Lorem....                  3              1
+id    pavadinimas     aprasymas              pozicija      prekes_id
+1     foto1.jpg       Lorem....                3              1
 2     foto2123123.PNG Lorem....                99999            18
-3     foto123.jpg       Lorem....                2              5
+3     foto123.jpg     Lorem....                2              5
 
 
 

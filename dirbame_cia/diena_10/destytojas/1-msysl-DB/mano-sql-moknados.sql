@@ -13,7 +13,7 @@ show tables;
 SELECT    *      FROM     user;
 SELECT   User,  Grant_priv   FROM     user;
 
-CREATE USER 'tautvydas11'@'localhost' IDENTIFIED BY 'tratata' ;
+CREATE USER 'tautvydas11'@'localhost' IDENTIFIED BY 'tratata';
 ALTER USER 'tautvydas11'@'localhost' PASSWORD EXPIRE NEVER;
 GRANT ALL PRIVILEGES ON * . * TO 'tautvydas11'@'localhost' WITH GRANT OPTION;
 
@@ -80,6 +80,7 @@ DELETE FROM img WHERE id = 5;
 UPDATE doctors
 SET   lname = "Litaite"
 WHERE name = "Lili";
+
 -- 1. ISVESTI SURIKIUOTUS GYTYTOJUS PAGAL pavarde
 SELECT * FROM doctors ORDER BY lname ASC;
 -- 2. ISVESTI GYTYTOJUS kuriu id mazesnis uz 3
