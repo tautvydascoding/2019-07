@@ -20,8 +20,8 @@ d.classList.toggle('otherclass');
 $("h1").addClass(" bg-info ");
 $( "p" ).removeClass( "myClass noClass" ).addClass( "yourClass" );
 $("h1").toggleClass('change_me newClass');
-$('h2').hasClass(" mt-2 "); // tikrinu ar 'h2' elementas turi klase 'mt-2'
-$('h2').is(' .mt-2');   // tikrinu ar 'h2' elementas turi klase 'mt-2'
+$('h2').hasClass(" mt-2 "); // tikrinu ar 'h2' elementas turi klase 'mt-2'      //naudoti IF'e, kad esat TRUE/FALSE butu galima kazka pakeisti
+$('h2').is(' .mt-2');   // tikrinu ar 'h2' elementas turi klase 'mt-2'          //naudoti IF'e, kad esat TRUE/FALSE butu galima kazka pakeisti
 
 $("button").click(function(){
    $("h1, h2, p").addClass(" bg-info ");  // you can select multiple elements, when adding classes
