@@ -57,6 +57,6 @@
 
 // UZDUOTIS 8
 //   su jquery uzpildyti form'a uz vartotoja:
-//  visiems "input" elementams pridete atributa: value=' xxx '   (naujant jQuery)
+//  visiems "input" elwementams pridete atributa: value=' xxx '   (naujant jQuery)
 //  ivesti vardas: 'Tomas'
 //  ivesti pastas: 'a@a.lt'

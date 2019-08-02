@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body nav .menu-content{
+    width: 100%;
+    background-color: darkslategray;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    font-family: 'Cabin', sans-serif;
+
+}
+body nav .menu-content li{
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 5%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5%;
+    transition: background-color 0.5s;
+    position: relative;
+}
+body nav .menu-content li a{
+    text-decoration: none;
+    color: white;
+}
+body nav .menu-content li:hover{
+    background-color: #587272;
+}
+.show:hover div.DropDownContent{
+    opacity: 1;
+    z-index: 98;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 250px;
+}
+.show:hover a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.DropDownContent{
+    background-color: darkslategray;
+    opacity: 0;
+    position: absolute;
+    transition:padding 1s ;
+    display: block;
+    padding: 0 0;
+    z-index: -1;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: padding-top 1s ;
+    transition: padding-bottom 1s ;
+    transition: height 1s;
+}
+.DropDownContent a{
+    transition: background-color 0.5s;
+    text-align: center;
+}
+.DropDownContent a:hover{
+    background-color: #587272;
+}
+nav li{
+    width: 100%;
+}
+.main-content{
+    display: flex;
+}
+.side-bar-menu{
+    height: 500px;
+}
+.products-paragraph{
+    height: 1100px;
+}
+.footer-bar{
+    background-color: darkslategray;
+    color: white;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.Login{
+    margin-top: 3%;
+    float:right;
+    margin-top: 2%;
+    margin-right: 6%;
+    padding-right: 3%;
+
+}
+.Login button{
+    float: right;
+}
+.company-logo{
+    margin-left: 3%;
+    margin-left: 4%;
+}
