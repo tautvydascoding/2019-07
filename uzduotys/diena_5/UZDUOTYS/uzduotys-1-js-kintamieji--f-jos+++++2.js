@@ -27,11 +27,15 @@
 // sukurti funkcija "printTekstas(x)" ,
 //  kuri atspausdina i konsole "x" reiksmes
 // iskviesti f-ja ir vietoj x irasyti koki nors teksta pvz: printTekstas( "Jokubo istorijos");
-
+// printTekstas .js faile ir susivedi funkcijos tekse, o ne ivedi per console
 
 
 // 7 UZDUOTIS
+<<<<<<< HEAD:uzduotys/diena_5/UZDUOTYS/uzduotys-1-js-kintamieji--f-jos.js
+// F-ja kuri paskaiciuoja staciojo trikampio ilgaja krastine (Pitagoro teorema)
+=======
 // F-ja kuri paskaiciuoja  staciojo trikampio ilgaja krastine (Pitagoro teorema)
+>>>>>>> ce36474d479998459ce3cc2aa5a8b1009064655d:uzduotys/diena_5/UZDUOTYS/uzduotys-1-js-kintamieji--f-jos+++++2.js
 // pitagoroTeorema(x, y)      x*x + y*y ir is visko istraukti sakti (js Math.sqrt())
 
 //==========================KOMANDINE (3-4h) Bootstrap && GIT=================

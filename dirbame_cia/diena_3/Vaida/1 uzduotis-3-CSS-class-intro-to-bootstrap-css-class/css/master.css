@@ -1,0 +1,14 @@
+/* komentas */
+.fonas-blue {background-color: blue;}
+.fonas-pink {background-color: pink;}
+.fonas-green {background-color: green;}
+p {background-color: yellow;}
+.plotis-30 {width: 30%;}
+.plotis-45 {width: 45%;}
+.plotis-100 {width: 100%;}
+.float {float: left;}
+
+.isjungiu-float {
+    clear: :both;
+    content: "";
+}

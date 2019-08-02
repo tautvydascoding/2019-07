@@ -3,23 +3,23 @@
 // CSS faile, sukurti  kintamauosius:
 //  --aukstis
 // --fono-splava
-
+ 
 
 // :root {
-// --transition-type: padding-left 250ms ease-out;
-// --font-stack: Cambria, Georgia, "Times New Roman", serif;
+// --transition-type: padding-left 250ms ease-out; 
+// --font-stack: Cambria, Georgia, "Times New Roman", serif; 
 // --h3-color: teal;
-// --h3-size: 5px;
+// --h3-size: 5px; 
 // }
 
 // 1.2 jiems priskirt reiksmes
-// 1.3 html gaile sukurti H1 elementa ir CSS faile h1 uzdeti fono spalva panaudojant kintamaji,
+// 1.3 html gaile sukurti H1 elementa ir CSS faile h1 uzdeti fono spalva panaudojant kintamaji, 
 // ir uzdeti aukstis - panaudojant "aukstis" kintamaji
 // pvz:
-article  {
-  color: var(--h1-color);
-  font-size: var(--h1-size);
-}
+// article  {
+//   color: var(--h1-color);
+//   font-size: var(--h1-size);
+// }
 // 2. javascript faile, paimti CSS  kintamuju reiksmes ir isvesti i consle: pvz:
 
 

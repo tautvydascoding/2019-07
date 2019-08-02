@@ -2,14 +2,15 @@
     var x = 10;
     x = x + 3;  // x = 13
     x += 3;     // tas pats kad x = x + 3;
-    x++;       //  tas pats kas x = x + 1;
+    x++;        //  tas pats kas x = x + 1;
+// document.querySelector('body').innerHTML += "Labas";
 
 //=============FOR   LOOP====================
 // teo:  https://www.w3schools.com/js/js_loop_for.asp
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
 
 // 1 UZDUOTIS
-// isvesti 30 kartu zodi "Azuolas" i konsole  (! bandant tai padaryti, atsiras skaicius 50)
+// isvesti 30 kartu zodi "Azuolas" i konsole  (! bandant tai padaryti, atsiras skaicius 30)
 
 // 1.1 UZDUOTIS
 // isvesti i ekrana "<h3> Azuolas </h3>" su document.write arba innerHTML
