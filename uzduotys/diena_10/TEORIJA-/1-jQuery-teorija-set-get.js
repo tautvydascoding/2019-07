@@ -12,7 +12,7 @@ var oHTML = $("h1").html();
 //console.log("h1 oHTML: " + oHTML);
 
 //---- get only first h1 text------
-var elm = $("h1").eq(0);   // eq -  return the jquery selector
+var elm =  $("h1").eq(0);   // eq -  return the jquery selector
 var elm2 = $("h1")[0];     // [0] - return the DOM element
 console.log("eq(): " ,  elm);
 console.log("[0]: " ,  elm2);

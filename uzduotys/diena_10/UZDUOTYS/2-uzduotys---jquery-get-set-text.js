@@ -7,7 +7,7 @@
 
 <h2> 1. h2 Isijunk konsole</h2>
 <h2> 2. h2 Isijunk konsole</h2>
-<h2> 3. h2 Isijunk konsole</h2>
+<h2> 3. h2 IAsijunk konsole</h2>
 
  <section>
      <h2 class='reklama'> 1. h2 Isijunk konsole</h2>
