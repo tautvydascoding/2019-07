@@ -22,6 +22,7 @@ function loginTest() {
     }
 }
 function skaiciuotuvas() {
+    cookie_delete();
     var lygtis = document.querySelector(".lygtis").value;
     var simboliuMasyvas = [];
     var bendras = 0;
@@ -113,4 +114,83 @@ function skaiciuotuvas() {
 }
 
     rezultatas.innerHTML = "Atsakymas yra: " + suma;
+}
+
+window.onscroll = function(){stickyNavBar();};
+
+var navBar = document.querySelector(".navBaras");
+var sticky = navBar.offsetTop;
+
+function stickyNavBar() {
+
+    if (window.pageYOffset >= sticky) {
+        navBar.classList.add("sticky");
+    }
+    else{
+        navBar.classList.remove("sticky");
+    }
+}
+
+
+function edit_footer() {
+    var textField = document.querySelector(".editable_text");
+    textField.contentEditable = true;
+}
+
+function cookie_check() {
+    var timesVisited = cookie_get("times_visited");
+    console.log(timesVisited);
+    if(timesVisited != 0){
+        cookie_set("times_visited", timesVisited);
+        timesVisited = cookie_get("times_visited");
+    }else{
+        cookie_create(365);
+        timesVisited = cookie_get("times_visited");
+    }
+    alert("You have been here " + timesVisited + " time(s)");
+}
+function cookie_get(property) {
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var decodedCookieSplit = decodedCookie.split(';');
+    var name = property + "=";
+    for(var i = 0; i < decodedCookieSplit.length; i++){
+        var c = decodedCookieSplit[i];
+        while(c == " "){
+            c = c.substring(1);
+        }
+        if(c.indexOf(name) == 0){
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function cookie_set(property, timesVisited) {
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var decodedCookieSplit = decodedCookie.split(';');
+    var name = property + "=";
+    for(var i = 0; i < decodedCookieSplit.length; i++){
+        var c = decodedCookieSplit[i];
+        while(c == " "){
+            c = c.substring(1);
+        }
+        if(c.indexOf(name) == 0){
+            var copy = document.cookie.substring(c.length);
+            document.cookie = encodeURIComponent(property) + '=' + encodeURIComponent(Number(timesVisited) + 1);
+            // document.cookie = property + "=" + Number(timesVisited)+1;
+        }
+    }
+}
+function cookie_create(exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires = "+d.toUTCString();
+    document.cookie = "times_visited=" + 1 + ";" + expires + ";path=/";
+}
+function cookie_delete() {
+    document.cookie = "times_visited=; expires = Thu, 01 Jan 1970 00:00:00 GMT";
+}
+function verify_age() {
+    var element = document.querySelector("#legal-age-box");
+    // element
 }
