@@ -19,8 +19,8 @@
     $autos = [];
     $auto1 = ["Audi", "A6", 2004];
     $auto2 = ["BMW", "X4", 2010];
-    $auto[0] = $auto1;
-    $auto[1] = $auto2;
+    $autos[0] = $auto1;
+    $autos[1] = $auto2;
 
     echo "<br / />";
     print_r($autos);
