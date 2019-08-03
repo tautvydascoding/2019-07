@@ -6,30 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Bootstrap uzduotis #2</title>
+    <title>PHP matricos</title>
 </head>
 <body>
     
     <div class="container-fluid">
         <div class="row mb-2">
-            <div class="col-8 mr-2 art">
-                <h1></h1>
-                <img>
-                <h4></h4>
-                <p></p>
-            </div>
-            <div class="col mr-2 navi">
-                <h1></h1>
-                <img>
-                <h4></h4>
-                <p></p>
-            </div>
-            <div class="col addd">
-                <h1></h1>
-                <img>
-                <h4></h4>
-                <p></p>
-            </div>
+            <div class="col art"></div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col navi"></div>
+        </div>
+
+        <div class="row">
+            <div class="col addd"></div>
         </div>
     </div>
 
@@ -65,6 +56,9 @@ for ($i=0; $i < count($prekiuInfo); $i++) {
     printf("<img src='./img/" . $prekiuInfo[$i][1] . "' width='200px;' alt=''/>");
     printf("<img src='./img/" . $prekiuInfo[$i][2] . "' width='200px;' alt=''/>");
     printf("<img src='./img/" . $prekiuInfo[$i][3] . "' width='200px;' alt=''/>");
+    echo "<h1>" . $prekiuInfo[$i][0] . "</h1>";
+    echo "<h1>" . $prekiuInfo[$i][2] . "</h1>";
+    echo "<h1>" . $prekiuInfo[$i][3] . "</h1>";
 }
 ?>
 
