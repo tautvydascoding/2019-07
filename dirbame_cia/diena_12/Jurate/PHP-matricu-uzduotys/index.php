@@ -41,14 +41,12 @@
 $preke1 = ['Telefonas', 'portfolio-01.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '500 €'];
 $preke2 = ['Plansetinis kompiuteris', 'portfolio-02.jpg', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', '800 €'];
 $preke3 = ['Nesiojamas kompiuteris', 'portfolio-03.jpg', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', '2000 €'];
-// $preke4 = ['Konsole', 'ads.jpg', 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '600 €'];
 $prekiuInfo = [];
 
 // Sukeliam visus mini masyvus i pagrindini masyva
 $prekiuInfo[0] = $preke1;
 $prekiuInfo[1] = $preke2;
 $prekiuInfo[2] = $preke3;
-// $prekiuInfo[3] = $preke4;
 
 // print_r($prekiuInfo);
 
