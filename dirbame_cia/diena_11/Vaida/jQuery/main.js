@@ -91,3 +91,7 @@ $('h2').attr("preke", "1");
 // console.log( elm2[0].text();    // ERROR: [0] return the DOM element
 // NOTE: $(...)[0] will return the DOM element. If you want to use a jquery function, it has to be on a jquery selector object. If you want to get the jquery selector for a specific index, use the eq function:
 // NOTE:  eq( -2 ) - nuo galo antras
+
+
+
+//----------------------------

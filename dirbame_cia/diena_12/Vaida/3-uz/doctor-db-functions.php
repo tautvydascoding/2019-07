@@ -30,6 +30,7 @@ if($prisijungimas == true){
 function getDoctor($nr){
     $manoSQL = "SELECT * FROM doctors WHERE id = '$nr' ";
     // mysqli_query($link, $query);
+    // ivykdo ka nori duomenu bazeje(trynimas ir pan)
     $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL);
     // print_r( $rezultatai );
     // var_dump( $rezultatai ); //labai stipri atspausdinas ir tipus;
