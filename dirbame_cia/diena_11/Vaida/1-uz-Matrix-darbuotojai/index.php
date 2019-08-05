@@ -47,7 +47,7 @@ for ($i=0; $i < 4 ; $i++) {
 echo "Visu darbuotoju tik vardai: <hr />";
 
 for ($i=0; $i < 3; $i++) {
-                // vis zmones visi duomeys
+                // vis zmones tik vardai
     echo $visiDarbuotojai[$i][0] . " ";
 }
 echo "<hr />";
@@ -112,7 +112,20 @@ echo $visiDarbuotojai[$nr][0] . $visiDarbuotojai[$nr][1];
 
 
 
+//-----------------------------------------------------------------
 
+// UZDUOTIS 2 --------------
+// sukurti matrica, kurioje bus saugoma kiekvienos prekes info:
+// Antraste, img pavadinimas, kaina, prekes aprasymas
+
+// A. sukurti masyva preke: Antraste, img pavadinimas, prekes aprasymas, kaina
+// B. i masyva visosPrekes, ideti "preke" masyva
+// C. atvaizduodi kiekvienoje eiluteje po 3 prekes (naudojant for arba foreach) ir bootstrap dizaina
+
+
+   // 3 budai nuotraukoms
+    // printf("<img src='./img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
+    // printf("<img src='./img/%s' width='200px;' alt=''  />", $visosPrekes[$i][1]);
 
 
 
