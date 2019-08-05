@@ -5,7 +5,10 @@
 // uzduotis 4: gauti paciento "Mark" daktaro pavarde    // naudoti inerjorn
 
 
-
+SELECT doctors.lname
+FROM doctors
+INNER JOIN patients
+ON doctors.id = patients.doctor_id;
 
 
 //

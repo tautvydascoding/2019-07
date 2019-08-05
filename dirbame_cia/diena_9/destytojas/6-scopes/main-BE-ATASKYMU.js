@@ -6,20 +6,20 @@ function suma () {
     let x = 20;
 }
 
-console.log( x );
+console.log( x );//
 suma();
-console.log( x );
+console.log( x );//
 
 x = 10;
 function suma2 () {
       x = 20;
 }
-console.log( x );
+console.log( x );//
 suma2();
-console.log( x );
+console.log( x );//
 //-----------------
 x = 10;
-function suma3 (x) { //
+function suma3 (x) {
       x = 20;  //
 }
 console.log( x );
@@ -27,7 +27,7 @@ suma3(30);
 console.log( x );
 //-----------------
 x = 10;
-function suma4 (x) {  
+function suma4 (x) {
       console.log( x );
       x = 20;
       console.log( x );
