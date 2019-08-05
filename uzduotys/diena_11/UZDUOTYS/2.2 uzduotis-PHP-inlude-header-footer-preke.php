@@ -13,7 +13,7 @@ index.php
 
 index.php Faile naudojant f-ja include('kelias')     "iterpti" header, main ir footer failus, pvz:
 index.php
-    include('header.php'); 
+    include('header.php');
     include('main.php');
     include('footer.php');
 
