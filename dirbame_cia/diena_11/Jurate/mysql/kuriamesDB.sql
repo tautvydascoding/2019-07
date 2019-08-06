@@ -114,3 +114,79 @@ INSERT INTO Doctors  VALUES  (NULL,
     'Ąžuolyno Medicinos centras', 
     'Šeimos Gydytojas', 
     '20 metų');
+
+-- Susikuriam trečiąją lentelę:
+CREATE TABLE Patients (
+    ID INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL, 
+    LastName VARCHAR(255) NOT NULL, 
+    Address VARCHAR(255) NOT NULL,
+    MobileNumber INT,
+    Email VARCHAR(255) NOT NULL,
+    Doctor_ID INT
+	  );
+
+-- Įdedam duomenis į lentelę
+INSERT INTO Patients  VALUES  (NULL, 
+    'Inga', 
+    'Guogiene', 
+    'Deguciu g. 1A, Vilnius', 
+    159951159, 
+    'inga@gmail.com',
+    9);
+INSERT INTO Patients  VALUES  (NULL, 
+    'Paulina', 
+    'Gruselionyte', 
+    'Savanoriu pr. 33A, Kaunas', 
+    753357753, 
+    'paulina@gmail.com',
+    6);
+INSERT INTO Patients  VALUES  (NULL, 
+    'Lina', 
+    'Ciapinskaite', 
+    'Mariu g. 5, Klaipeda', 
+    258852258, 
+    'lina@gmail.com',
+    3);
+INSERT INTO Patients  VALUES  (NULL, 
+    'Gediminas', 
+    'Samulenas', 
+    'Islandijos pl. 7, Kaunas', 
+    123321123, 
+    'gediminas@gmail.com',
+    8);
+INSERT INTO Patients  VALUES  (NULL, 
+    'Gintare', 
+    'Kazbaraite', 
+    'Adolfo Baliuno g. 6, Vilnius', 
+    654456654, 
+    'gintare@gmail.com',
+    5);
+INSERT INTO Patients  VALUES  (NULL, 
+    'Nerijus', 
+    'Deimantavicius', 
+    'Baltijos 11-oji g. 6, Klaipeda', 
+    987789987, 
+    'nerijus@gmail.com',
+    2);
+INSERT INTO Patients  VALUES  (NULL, 
+    'Jurate', 
+    'Lasiene', 
+    'Azuolu g. 3A, Klaipeda', 
+    963369963, 
+    'jurate@gmail.com',
+    7);
+INSERT INTO Patients  VALUES  (NULL, 
+    'Palma', 
+    'Palioniene', 
+    'Dariaus ir Gireno g. 193, Vilnius', 
+    741147741, 
+    'palma@gmail.com',
+    4);
+INSERT INTO Patients  VALUES  (NULL, 
+    'Raimondas', 
+    'Valickas', 
+    'Demokratu g. 2, Kaunas', 
+    918273456, 
+    'raimonda@gmail.com',
+    1);
