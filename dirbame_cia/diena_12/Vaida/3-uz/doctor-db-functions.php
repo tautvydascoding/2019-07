@@ -30,7 +30,7 @@ if($prisijungimas == true){
 function getDoctor($nr){
     $manoSQL = "SELECT * FROM doctors WHERE id = '$nr' ";
     // mysqli_query($link, $query);
-    // ivykdo ka nori duomenu bazeje(trynimas ir pan)
+    // vykdo uzklausas, gaunasm objekta.....ivykdo ka nori duomenu bazeje(trynimas ir pan)
     $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL);
     // print_r( $rezultatai );
     // var_dump( $rezultatai ); //labai stipri atspausdinas ir tipus;
@@ -40,6 +40,7 @@ function getDoctor($nr){
         // code...
     }
     //is $Resultatai paimam TIK viena eilute(gydytooja)
+    //is objekto isima viena, paleidus dar karta, paims dar viena gydytoja
     $rezultataiArray = mysqli_fetch_row($rezultatai);
     return $rezultataiArray;
 }

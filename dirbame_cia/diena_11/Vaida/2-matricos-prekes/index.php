@@ -27,6 +27,8 @@ $visosPrekes[1] = $preke2;
 $visosPrekes[2] = $preke3;
 $visosPrekes[3] = $preke4;
 
+
+// row
 for ($i=0; $i < 3; $i++) {
 
     printf("<img src='./img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");

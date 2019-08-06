@@ -21,6 +21,8 @@ function getPrisijungimas(){
         echo "ERROR, prisijungti nepavyko <br/>";
         echo mysqli_connect_error() . "<br/>";
     }
+    // Kokios kalbos bus duomenų bazė, utf-8 neveiks, reikia rašyti utf8
+    mysqli_set_charset($prisijungimas, "utf8");
     return $prisijungimas;
     // mysqli_close($prisijungimas); // atsijungti nuo DB, taip sutaupom serveryje resursų
 }

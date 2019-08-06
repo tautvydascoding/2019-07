@@ -1,0 +1,7 @@
+index.php faile isvesti visus pacientus - naudojant while
+
+
+// sunki
+salia isvesti DELETE mygtukus
+- ant kuriu paspaudus nueinam i delete-docotr.php
+faila ir paleidziam istrynimo f-ja
