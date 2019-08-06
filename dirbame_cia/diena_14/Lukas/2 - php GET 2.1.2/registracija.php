@@ -1,4 +1,5 @@
-5<?php
+
+<?php
 // 1. sukurti index.php
 // 2. parasyti PHP koda:
 

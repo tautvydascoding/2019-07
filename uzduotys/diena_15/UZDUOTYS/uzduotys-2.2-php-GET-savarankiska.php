@@ -5,9 +5,9 @@
 
 // 2. doctor.php faile parasyti PHP koda:
     $numeris = 2;  // norimo gydytojo is DB numeris (id)
-    $gydytojas = getDoctor( $numeris);
+    $gydytojas = getDoctor($numeris);
 
-    echo $gydytojas[1] .  $gydytojas[2] ;
+    // echo $gydytojas[1] .  $gydytojas[2];
     echo $gydytojas["name"] .  $gydytojas['lname'] ;
 
 

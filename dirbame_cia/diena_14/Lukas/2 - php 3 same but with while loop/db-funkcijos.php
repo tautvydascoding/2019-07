@@ -50,7 +50,7 @@ function getDoctors() {
 
 // $doctor = mysqli_fetch_row($doctors);
 
-echo "<hr />";
+// echo "<hr />";
 
 // while ($doctor) {
 //     print_r($doctor);
