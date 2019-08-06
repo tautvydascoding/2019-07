@@ -17,33 +17,28 @@
 
     <body>
 
-        <h1>Isijunk konsole</h1>
-        <h1>Isijunk konsole</h1>
+        <h1> Visi gydytojai </h1>
+<section>
+    <?php
+    include_once('hospital-db-function.php');
+        $visiGydytojai = getDoctors(4); //mysql objektas
 
-        <h2> 1. h2 Isijunk konsole</h2>
-        <h2> 2. h2 Isijunk konsole</h2>
-        <h2> 3. h2 Isijunk konsole</h2>
-
-         <section>
-             <h2 class='reklama'> 1. h2 Isijunk konsole</h2>
-             <h2> 2. h2 Isijunk konsole</h2>
-             <h2> 3. h2 Isijunk konsole</h2>
-             <h2> 4. h2 Isijunk konsole</h2>
-         </section>
-
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li class='reklama'style="color: red" >Gallery</li>
-            <li>Contact</li>
-        </ul>
-
-        <form>
-        	<input type="text" name="vardas" value="">
-        	<input type="email" name="pastas" value="">
-        </form>
+        $gydyt = mysqli_fetch_row($visiGydytojai);
+        $gydyt = mysqli_fetch_assoc($visiGydytojai);
+        print_r($gydyt);
 
 
+
+
+
+
+
+
+
+
+
+     ?>
+</section>
 
 
 

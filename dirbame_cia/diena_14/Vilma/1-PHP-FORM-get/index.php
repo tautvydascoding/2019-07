@@ -17,34 +17,24 @@
 
     <body>
 
-        <h1>Isijunk konsole</h1>
-        <h1>Isijunk konsole</h1>
+        <h1> Isijunk inspect->console </h1>
 
-        <h2> 1. h2 Isijunk konsole</h2>
-        <h2> 2. h2 Isijunk konsole</h2>
-        <h2> 3. h2 Isijunk konsole</h2>
+<p>1. index.php faile sukurti HTML form'a naudojant metoda (GET) ir  su ivedimo laukais:
+ vardas, pavarde, telefonas, mygtukas 'registruotis'
 
-         <section>
-             <h2 class='reklama'> 1. h2 Isijunk konsole</h2>
-             <h2> 2. h2 Isijunk konsole</h2>
-             <h2> 3. h2 Isijunk konsole</h2>
-             <h2> 4. h2 Isijunk konsole</h2>
-         </section>
+2. kai paspaudzia 'registruotis', vartotoja perkelti i registracija.php faila (formoje action='registracija.php')
 
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li class='reklama'style="color: red" >Gallery</li>
-            <li>Contact</li>
-        </ul>
+3. registracija.php faile pasinaudojant globaliu PHP masyvu $_GET atspausdinti vartotojo ivestu duomenis
+pvz.:
+print_r( $_GET);
+</p>
 
-        <form>
-        	<input type="text" name="vardas" value="">
-        	<input type="email" name="pastas" value="">
-        </form>
-
-
-
+<form class="" action="registracija.php" method="get">
+    <input type="text" name="vardas" value="" placeholder="Jūsų Vardas"><br />
+    <input type="text" name="pavarde" value="" placeholder="Jūsų Pavardė"> <br />
+    <input type="text" name="telefonas" value="" placeholder="Telefonas"> <br />
+    <button type="submit" >Registruotis</button>
+</form>
 
 
         <!-- bootstrap'ui -->
@@ -53,9 +43,7 @@
         <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js">    </script>
 
         <!-- mano js failas visasda pats zemiausias ir failo apacioje -->
-        <script type="text/javascript" src="main.js">
-
-        </script>
+        <script type="text/javascript" src="main.js">  </script>
 
 
     </body>
