@@ -20,7 +20,7 @@ function getPrisijungimas (){
         echo mysqli_connect_error()    .  "<br  />";
     }
     return $prisijungimas;
-    // mysqli_close($prisijungimas);  // atsijungit nuo DB
+    // mysqli_close($prisijungimas);  // atsijungti nuo DB
 }
 
 /// iki cia viskas svarbu - persirasyti - isidemeti
@@ -118,7 +118,7 @@ function getDoctors($kiekis) {
 }
 //--------test------------
 // $visGgydytojai = getDoctors(11); // MySQL objektas, ne masyvas
-// 
+//
 // // fetch is mysqli obj paima tik viena eilute ir pavercia i array
 // $gydytARRAY = mysqli_fetch_assoc($visGgydytojai); // vienas gydytojas array
 // // print_r( $gydytARRAY); //testavom
