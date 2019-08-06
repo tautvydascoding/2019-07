@@ -14,4 +14,4 @@ echo "vardas: " . $username  ;
 //============ return json objekta=================
 // $x = $_POST["name"];
 // $manoAray = ['vardas' => $x  ];
-// echo json_encode( $manoAray );
+echo json_encode( $manoAray );
