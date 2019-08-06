@@ -1,8 +1,8 @@
 <?php
 // Prisijungimas prie DB
 // Konstantos:
-define('DB_USER', 'jurateP');
-define('DB_PASS', 'Lo/*ck');
+define('DB_USER', '');
+define('DB_PASS', '');
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'Hospital7');
 
@@ -49,5 +49,8 @@ function getDoctor($number){
 // print_r($gydytojas);
 
 // Mysql fetch paima tik 1 eilutę, kurią pasirinkom ir ją paverčia į masyvą
+// mysqli_query įvykdo sql užklausas ir mums grįžta mysql objektas
+// kai leidžiam mysqli_fetch, jis paima tik vieną objekto elementą (gydytoją) ir jį paverčia į masyvą, jei dar kartą leidžiam, jis paima dar kitą objekto elementą (gydytoją) ir jį paverčia į masyvą
+// mysqli_fetch ima tik iš mysql objekto, kurį susikuriam su mysqli_query, neima duomenų tiesiogiai iš duomenų bazės
 
 

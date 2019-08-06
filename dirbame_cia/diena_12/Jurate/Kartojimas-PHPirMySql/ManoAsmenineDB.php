@@ -1,7 +1,7 @@
 <?php
 // Aprašom konstantas
-define('DB_USER', 'jurateP');
-define('DB_PASS', 'Lo/*ck');
+define('DB_USER', '');
+define('DB_PASS', '');
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'juratespetrukaitytesDB');
 
