@@ -40,3 +40,20 @@ function getClinic($number){
         return $resultArray;
     }
 }
+
+// Pasiimam informaciją apie gydytojus iš duomenų bazės
+function getDoctors($amount){
+    $manoSQL = "SELECT * FROM Doctors ORDER BY Location ASC LIMIT $amount";
+    $answer = mysqli_query(getConnection(), $manoSQL);
+    return $answer;
+}
+
+// $allDoctors = getDoctors(7);
+// $doctorArray = mysqli_fetch_assoc($allDoctors);
+// print_r($doctorArray);
+// echo "<hr>";
+
+// while ($doctorArray) {
+//     print_r($doctorArray);
+//     $doctorArray = mysqli_fetch_assoc($allDoctors);
+// }
