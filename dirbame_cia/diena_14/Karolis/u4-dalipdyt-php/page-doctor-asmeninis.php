@@ -1,10 +1,10 @@
 <?php
-
+include('getdoctor.php');
 
 // 1. sukurti tuscia porjekta (default)
 
 // 2. doctor.php faile parasyti PHP koda:
-    $numeris = 1;  // norimo gydytojo is DB numeris (id)
+    $numeris = 6;  // norimo gydytojo is DB numeris (id)
     $gydytojas = getDoctor( $numeris);
 
     echo $gydytojas[1] .  $gydytojas[2] ;
@@ -16,7 +16,7 @@
 // 3.1.1 isideti i projekta faila: db_functions.php
 
 // 3.1.2  i  faila  doctor.php parasyti:
-include('db_functions.php');
+// include('db_functions.php');
 
 // 4. faile  pakeisti $numeris = 3;
 // 4. faile  pakeisti $numeris = 4;
