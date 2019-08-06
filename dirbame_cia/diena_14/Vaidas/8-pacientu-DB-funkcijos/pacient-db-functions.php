@@ -24,10 +24,10 @@ echo "prisijungiau prie DB! <br />";
 //======================================
 //Funcija paimti viena pacienta
 
-function getPatients($nr){
+function getPatient($nr){
      $manoSQL = "SELECT * FROM patients WHERE id = '$nr' ";
      $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL);
-         if ($rezultatai == true) {
+         if ($rezultatai == false) {
          return "Klaida:  "  . mysqli_error(getPrisijungimas()  );
          }
      // print_r($rezultatai); // test mysql objektas
@@ -38,6 +38,18 @@ function getPatients($nr){
      // print_r ($rezultataiArray);
      return $rezultataiArray;
 }
+
+
 //testuojam:
 // $pacientas = getPatients(2);
 // print_r($pacientas);
+// -----------------------------------------------------------
+
+function getPatients($kiekis = 999999) {
+    $manoSQL = "SELECT * FROM patients
+                        ORDER BY lname
+                        LIMIT $kiekis
+                        ";
+    $result = mysqli_query(getPrisijungimas(), $manoSQL);
+    return $result;  // MySQL objektas, ne masyvas
+}
