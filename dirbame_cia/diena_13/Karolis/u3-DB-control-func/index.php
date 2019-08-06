@@ -24,7 +24,6 @@ if ($conn == false){
 };
 getLoginStatus2();
 function getDoctor($id){
-
     $mysql = "select * from doctors where id = '$id' ;";
     $results = mysqli_query(getLoginStatus2(),$mysql);
     print_r($results);
@@ -36,7 +35,6 @@ function getDoctor($id){
     }
     return $resultsArray;
 };
-
 $doctor = getDoctor(1);
 print_r($doctor);
 
