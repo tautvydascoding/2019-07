@@ -12,7 +12,7 @@
     <body>
 <?php
 // print_r($_GET); // Pasitikriname ir viskas veikia ir gauname rezultatą
-include('DOCTOR-DB-FUNCTIONS.php');
+include('DOCTORs-DB-FUNCTIONS.php');
 $number = $_GET['number'];
 $doctor = getDoctor($number);
 // print_r($doctor);
