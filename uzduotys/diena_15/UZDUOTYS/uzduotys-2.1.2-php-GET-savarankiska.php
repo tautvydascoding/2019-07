@@ -2,9 +2,13 @@
 // 1. sukurti index.php
 // 2. parasyti PHP koda:
 
+<<<<<<< HEAD
 
     //  susikurti masyva- preke1: kaina, pavadinimas, kiekis
 
+=======
+    //  susikurti masyva- preke1: kaina, pavadinimas, kiekis
+>>>>>>> 799927a270c38f40e7aa8f12c260e49d0c0e307d
     $numeris = $_GET['x'];
     echo "numeris: $numeris <br />";
     echo $preke1[$numeris] . "<hr />";
