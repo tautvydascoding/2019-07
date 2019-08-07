@@ -18,12 +18,20 @@
         <p>
             <?php
             include_once('doctor-db-functions.php');
-            $gydytojas = getDoctor(4);  //grista vienas gydytojas MYSQL objektas
+
+            //create doctor
+
+            echo "<a class= 'btn btn-bg-success' href='page-doctor.php'> New </a>";
+        ?>
+
+
+        <?php
+            // $gydytojas = getDoctor(4);  //grista vienas gydytojas MYSQL objektas
 
             //jei kvieciu vienaskaita tada nereikia fetch, daugiskaitoje reiks fetch
             // print_r($gydytojas);    //test
 
-            echo "$gydytojas[1]  $gydytojas[2] <hr />";
+            // echo "$gydytojas[1]  $gydytojas[2] <hr />";
 //--------------------------------------------------------
             // 3.1 su for visi gydytojai
 
@@ -35,18 +43,19 @@
             // su while ciklu   visi gydytojai
 
             $visiGydytojas  = getDoctors(24); //grista MYSQL OBJ jo viduje yra
-
             $gyd = mysqli_fetch_assoc($visiGydytojas);  //array asocc
 
             // print_r( $gyd );    //test
-
             while ($gyd) {
-                echo $gyd["name"] ." ". $gyd["lname"] . "<hr>";
+                // echo $gyd["name"] ." ". $gyd["lname"] . "<hr>";
+                echo "<a href='page-doctor.php?nr={$gyd['id']}'>" . "</br>". $gyd['lname'] . "</a>" . "</br>";
+
+                echo "<a class='btn bg-danger text-white' href='doctor-delete.php?nr={$gyd['id']}'> DELETE </a>";
+
                 $gyd = mysqli_fetch_assoc($visiGydytojas);
-                }
+            }
              ?>
         </p>
-
         <!-- bootstrap'ui -->
         <script src="libs/jquery-3.4.1.min.js" ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

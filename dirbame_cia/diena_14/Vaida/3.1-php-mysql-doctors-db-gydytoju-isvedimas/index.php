@@ -15,29 +15,37 @@
         <!-- !!!! VISSA MANO CSS failas pats zemiausias -->
     </head>
     <body>
-        <h1> Visi pacientai: </h1>
-        <section>
+        <p>
             <?php
-            include_once('patient-db-functions.php');
-            echo "<hr />";
+            include_once('doctor-db-functions.php');
+            $gydytojas = getDoctor(4);  //grista vienas gydytojas MYSQL objektas
 
-            // $pacientas = getPatient(7); //grizta vienas pacientas
-            //
-            //
-            // echo "$pacientas[1] $pacientas[2] <hr />";
+            //jei kvieciu vienaskaita tada nereikia fetch, daugiskaitoje reiks fetch
+            // print_r($gydytojas);    //test
+        
+            echo "$gydytojas[1]  $gydytojas[2] <hr />";
+//--------------------------------------------------------
+            // 3.1 su for visi gydytojai
 
-//------------------------------------------------------------------------------------
-            $visiPacientai = getPatients(20); //mySQL OBJEKTAS
-            $pacientas = mysqli_fetch_assoc( $visiPacientai );     //atspausdins viena pacienta is visu    //asocc stalcius
-            // print_r($pacientasArray);
+            // for ($i=1; $i < 6 ; $i++) {
+            //     $gydytojas = getDoctor($i);
+            //     echo "pavarde: $gydytojas[2] <br />";
+            // }
+//--------------------------------------------------------
+            // su while ciklu   visi gydytojai
 
-            while ( $pacientas ){           //spausdina tol kol yra pacientai
-                // print_r( $pacientasArray );      //test
-                echo "<a href='page-patient.php?nr={$pacientas['id']}'>" . $pacientas['lname'] . "</a>" . "<br />";
-                $pacientas = mysqli_fetch_assoc( $visiPacientai );    //vienas pacientas
+            $visiGydytojas  = getDoctors(24); //grista MYSQL OBJ jo viduje yra
+
+            $gyd = mysqli_fetch_assoc($visiGydytojas);  //array asocc
+
+            // print_r( $gyd );    //test
+
+            while ($gyd) {
+                echo $gyd["name"] ." ". $gyd["lname"] . "<hr>";
+                $gyd = mysqli_fetch_assoc($visiGydytojas);
                 }
-            ?>
-        </section>
+             ?>
+        </p>
 
         <!-- bootstrap'ui -->
         <script src="libs/jquery-3.4.1.min.js" ></script>

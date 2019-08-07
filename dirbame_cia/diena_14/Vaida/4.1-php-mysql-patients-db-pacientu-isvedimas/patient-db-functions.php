@@ -26,7 +26,7 @@ if($prisijungimas == true){
 //------------------------------------------------------------
 function getPatient($nr){
     $manoSQL = "SELECT * FROM patients WHERE id = '$nr' ";
-    $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL);
+    $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL); //objektas
     // print_r($rezultatai);
     if ($rezultatai == false) {
         return "ERORR: " . mysqli_error(getPrisijungimas() );
