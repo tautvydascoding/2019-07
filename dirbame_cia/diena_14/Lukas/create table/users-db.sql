@@ -18,4 +18,4 @@ INSERT INTO `users` (id, name, lname, country, doctor_id) VALUES (NULL, 'David',
 INSERT INTO `users` (id, name, lname, country, doctor_id) VALUES (NULL, 'Audrey', 'Jones', 'France', '4');
 INSERT INTO `users` (id, name, lname, country, doctor_id) VALUES (NULL, 'Daniel', 'Smith', 'Italy', '3');
 
-ALTER TABLE `users` CHANGE `country` `country` VARCHAR(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL;
+ALTER TABLE `users` CHANGE `name` `name` VARCHAR(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL;
