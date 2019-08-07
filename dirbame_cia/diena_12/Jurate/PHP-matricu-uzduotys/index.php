@@ -20,8 +20,3 @@ $prekiuInfo[2] = $preke3;
 
 // print_r($prekiuInfo);
 include('prekes.php');
-
-
-foreach ($prekiuInfo as $preke) {
-    include_once('prekes.php');
-}

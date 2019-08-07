@@ -38,7 +38,7 @@ function getDoctor($nr){
         return "ERORR: " . mysqli_error(getPrisijungimas() );
         // code...
     }
-    //is $Resultatai paimam TIK viena eilute(gydytooja)
+    //is $Resultatai paimam TIK viena eilute(gydytooja), pavercia i masyva1
     $rezultataiArray = mysqli_fetch_row($rezultatai);
     return $rezultataiArray;
 }

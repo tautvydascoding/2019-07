@@ -1,4 +1,4 @@
-5<?php
+<?php
 // 1. sukurti index.php
 // 2. parasyti PHP koda:
 
@@ -8,7 +8,12 @@
 
 =======
     //  susikurti masyva- preke1: kaina, pavadinimas, kiekis
+<<<<<<< HEAD
 >>>>>>> 799927a270c38f40e7aa8f12c260e49d0c0e307d
+=======
+    // pvz: $preke1 = [499, "XXL dviratis", 2];
+
+>>>>>>> 96c9e77e31f4a131f89dbb7794cfc5b9700a8923
     $numeris = $_GET['x'];
     echo "numeris: $numeris <br />";
     echo $preke1[$numeris] . "<hr />";
