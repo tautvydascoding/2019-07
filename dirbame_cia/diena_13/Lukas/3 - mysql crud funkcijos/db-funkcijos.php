@@ -15,6 +15,7 @@ function getConnection() {
     } else {
         echo mysqli_error($conn);
     }
+    mysqli_set_charset($conn, "utf8");
     return $conn;
 }
 
@@ -49,7 +50,7 @@ function getDoctors() {
 
 // $doctor = mysqli_fetch_row($doctors);
 
-echo "<hr />"; 
+echo "<hr />";
 
 // while ($doctor) {
 //     print_r($doctor);

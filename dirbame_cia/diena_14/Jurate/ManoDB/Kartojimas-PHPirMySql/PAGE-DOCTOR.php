@@ -15,7 +15,7 @@
 include('DOCTOR-DB-FUNCTIONS.php');
 $number = $_GET['number'];
 $doctor = getDoctor($number);
-// print_r($gydytojas);
+// print_r($doctor);
 
 // Atspausdinam visą informaciją apie gydytoją
 echo "<h4>Doctor: {$doctor['Name']} {$doctor['LastName']} {$doctor['Location']} {$doctor['Practitioner']} {$doctor['Experience']} </h4>";

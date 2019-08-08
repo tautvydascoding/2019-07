@@ -4,10 +4,15 @@
 // 1. sukurti tuscia porjekta (default)
 
 // 2. doctor.php faile parasyti PHP koda:
+<<<<<<< HEAD
+    $numeris = 2;  // norimo gydytojo is DB numeris (id)
+    $gydytojas = getDoctor($numeris);
+=======
     $numeris = 1;  // norimo gydytojo is DB numeris (id)
     $gydytojas = getDoctor( $numeris);
+>>>>>>> 96c9e77e31f4a131f89dbb7794cfc5b9700a8923
 
-    echo $gydytojas[1] .  $gydytojas[2] ;
+    // echo $gydytojas[1] .  $gydytojas[2];
     echo $gydytojas["name"] .  $gydytojas['lname'] ;
 
 

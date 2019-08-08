@@ -7,7 +7,7 @@
 define("DB_USER", 'vaidasober');
 define("DB_PASS", 'slaptazodis');
 define("DB_HOST", 'localhost');
-define("DB_NAME", 'hospital7');
+define("DB_NAME", 'hospital9');
 
 mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 // echo "Veikia  <br />  <br />";
@@ -76,20 +76,20 @@ function createDoctor($vard, $pavard) {
 // createDoctor("Tomas", "Tomauskas");
 // createDoctor("Antanas", "Antanauskas");
 // createDoctor("Pranas", "Pranaitis");
-// si kodas dar neveikia, reikia sukodinti kad juos itraukti - kursim funkcija auksciau - function createDoctor
+// sis kodas dar neveikia, reikia sukodinti kad juos itraukti - kursim funkcija auksciau - function createDoctor
 //po gydytoju itraukimo uzkomentuojam sias -- createDoctor("Tomas", "Tomauskas"); -- eilutes
 
 
 // kita funkcija - deleteDoctor - susikuriam funkcija, istrinam po viena gydytoja; si funkcija pavojinga, nes
 // nenurodant - gali istrinti visus gydytojus. Uzkomentuojam...
-// function deleteDoctor($nr) {
-//     $manoSQL = "DELETE FROM doctors WHERE id = '$nr' ";
-//     $result = mysqli_query(getPrisijungimas(), $manoSQL);
-//     if ($result == false) {
-//         echo "KLAIDA, nepavyko istrinti gydytojo <br />";
-//     }
-// }
-// deleteDoctor(12);
+function deleteDoctor($nr) {
+    $manoSQL = "DELETE FROM doctors WHERE id = '$nr' ";
+    $result = mysqli_query(getPrisijungimas(), $manoSQL);
+    if ($result == false) {
+        echo "KLAIDA, nepavyko istrinti gydytojo <br />";
+    }
+}
+deleteDoctor(12);
 
 // pakeiciam gydytoju duomenis, uzkomentuojam
 // function editDoctor($nr, $vardas, $pavarde) {

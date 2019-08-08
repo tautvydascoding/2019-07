@@ -1,0 +1,23 @@
+$main_color: red;
+$second_color: lightblue;
+$min_height: 100px;
+
+body{
+    background-color: $second_color;
+}
+
+h1 {
+    color: $main_color;
+}
+.aukstis-100 {
+    height: $min_height;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 300px;
+}
+.aukstis-500 {
+    height: 500px;
+}
