@@ -24,6 +24,17 @@
                 include('doctor-db-functions.php');
 
 
+?>
+<!-- New - create doctor mygtukas -->
+
+<a class="btn btn-success" href="page-doctor-form.php"> New </a>
+
+
+
+
+<?php
+
+//---------------------------------------------------
 
                 // vardas pavarde issivesti
 
@@ -45,7 +56,9 @@
 
 
 
-//--------------------------------------------su whle ciklu-------
+//--------------------------------------------su while ciklu-------
+
+
                     $visiGydytojai = getDoctors(); // gryzta MySQL objektas, ne masyvas (jo viduje yra daug gydytoju)
                     // print_r($visiGydytojai);
 
@@ -60,7 +73,8 @@
                                                 $gydytojasArray['name'] . " " .
                                                 $gydytojasArray['lname'] . " " .
                                                 $gydytojasArray['id'] . "</a>" . " " .
-                                                "<a class='btn bg-danger text-white' href='doctor-delete.php?nr={$gydytojasArray['id']}'> DELETE </a>" .
+                                                "<a class='btn bg-danger text-white' href='doctor-delete.php?nr={$gydytojasArray['id']}'> DELETE </a>" . " " .
+                                                "<a class='btn bg-warning text-white' href='page-doctor-update-form.php?nr={$gydytojasArray['id']}'> KEISTI </a>" . " " .
                                         "</h4>" .
                                                 // "<a class='btn bg-danger text-white' href='doctor-delete.php?nr={$gydytojasArray['id']}'> DELETE </a>" .
                                     "</li>" .

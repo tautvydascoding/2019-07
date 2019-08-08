@@ -55,7 +55,24 @@ function getDoctor($nr){
 
 // createDoctor($vardas, $pavarde)
 // deleteDoctor($nr)
-// editDoctor($nr, $vardas, $pavarde)
+
+function editDoctor($nr, $vard, $pavard){
+    $uzkoduotasNR = mysqli_real_escape_string($nr);
+    $uzkoduotasVard = mysqli_real_escape_string($vard);
+    $uzkoduotasPavard = mysqli_real_escape_string($pavard);
+    // $uzkoduotasPavard = passwor_hash($uzkoduotasPavard, PASSWORD_DEFAULT);
+
+    $manoSQL = "UPDATE doctors set
+                                        name = '$uzkoduotasVard',
+                                        lname = '$uzkoduotasPavard'
+                                     WHERE
+                                         id = '$uzkoduotasNR'
+                                     LIMIT 1
+                                     ";
+}
+
+// mysqli_real_escape_string
+
 // getDoctors($kiekis = 999999)
 //
 // $visi = getDoctors();

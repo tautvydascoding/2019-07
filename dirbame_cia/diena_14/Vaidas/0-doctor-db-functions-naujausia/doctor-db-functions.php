@@ -55,7 +55,25 @@ function getDoctor($nr){
 
 // createDoctor($vardas, $pavarde)
 // deleteDoctor($nr)
-// editDoctor($nr, $vardas, $pavarde)
+
+function editDoctor($nr, $vard, $pavard){
+    $uzkoduotasNR = mysqli_real_escape_string(getPrisijungimas(), $nr);
+    $uzkoduotasVard = mysqli_real_escape_string(getPrisijungimas(), $vard);
+    $uzkoduotasPavard = mysqli_real_escape_string(getPrisijungimas(), $pavard);
+    // $uzkoduotasPavard = passwor_hash($uzkoduotasPavard, PASSWORD_DEFAULT);
+
+    $manoSQL = "UPDATE doctors set
+                                        name = '$uzkoduotasVard',
+                                        lname = '$uzkoduotasPavard'
+                                     WHERE
+                                         id = '$uzkoduotasNR'
+                                     LIMIT 1
+                                     ";
+    $result = mysqli_query(getPrisijungimas(), $manoSQL);
+}
+
+// mysqli_real_escape_string
+
 // getDoctors($kiekis = 999999)
 //
 // $visi = getDoctors();
@@ -89,7 +107,7 @@ function deleteDoctor($nr) {
         echo "KLAIDA, nepavyko istrinti gydytojo <br />";
     }
 }
-deleteDoctor(12);
+deleteDoctor(120);
 
 // pakeiciam gydytoju duomenis, uzkomentuojam
 // function editDoctor($nr, $vardas, $pavarde) {
