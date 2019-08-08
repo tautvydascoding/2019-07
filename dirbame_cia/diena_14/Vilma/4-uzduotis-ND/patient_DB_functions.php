@@ -20,11 +20,11 @@ return $prisijungimas;
         mysqli_close($prisijungimas); //atsijungti nuo DB
 }
 getPrisijungimas ();
-echo "Veikia <br/>";
+//echo "Veikia <br/>";
 
 //------------
-function getDoctor($nr){
-    $manoSQL = "SELECT * from doctors where id = '$nr' ";
+function getPatient($nr){
+    $manoSQL = "SELECT * from patients where id = '$nr' ";
     $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL);
     if ($rezultatai==false) {
         return "Error: " . mysqli_error(getPrisijungimas());}
@@ -34,52 +34,51 @@ function getDoctor($nr){
     $rezultataiArray = mysqli_fetch_row($rezultatai);
 return $rezultataiArray;
 }
-//testuojam
-// $gydytojas = getDoctor(5);
-// print_r($gydytojas);
 
 
-function createDoctor($vard, $pavard) {
-    $manoSQL = "INSERT INTO doctors values(NULL, '$vard', '$pavard');" ;
+function createPatient($vard, $pavard, $nr) {
+    $manoSQL = "INSERT INTO patients values(NULL, '$vard', '$pavard', '$nr')";
     $result = mysqli_query(getPrisijungimas(), $manoSQL);
     if ($result == false) {
         echo "Klaida, nepavyko issaugoti iraso <br/>";
     }
 }
 
-// createDoctor ("Tomas", "Tomauskas");
-// createDoctor ("Petras", "Petrauskas");
-// createDoctor ("Linas", "Adomaitis");
-// createDoctor ("Balys", "Komuntauskas");
-function deleteDoctor($nr){
-    $manoSQL = "DELETE FROM doctors WHERE id = '$nr'  ";
+//createPatient("Linas", "Binkulis", 6);
+// createPatient("Pertas", "Gražulis", 3);
+// createPatient("Jonas", "Jonikavičius", 5);
+// createPatient("Lina", "Žemaitytė", 2);
+
+function deletePatient($nr){
+    $manoSQL = "DELETE FROM patients WHERE id = '$nr'  ";
     $result = mysqli_query(getPrisijungimas(), $manoSQL);
     if ($result == false) {
         echo "Klaida, nepavyko istrinti iraso <br/>";
     }
 };
 
-// deleteDoctor(5);
+//deletePatient(3);
 
-function editDoctor($nr, $vard, $pavard){
-    $manoSQL = "UPDATE doctors
+function editPatient($nr, $vard, $pavard, $did){
+    $manoSQL = "UPDATE patients
                 SET
                     name = '$vard',
-                    lname = '$pavard'
+                    lname = '$pavard',
+                    doctor_id = '$did'
                 WHERE id = '$nr'
                 ";
 $result = mysqli_query(getPrisijungimas(), $manoSQL);
 if ($result == false) {
-    echo "Klaida: ".mysqli_error(getPrisijungimas());
+    echo "Klaida!!!!: ".mysqli_error(getPrisijungimas());
     }
 }
 
-//editDoctor(5, 'Petras', 'Petruskevicius');
+editPatient(5, 'Linutė', 'Kazragytė', 3);
 
 
 
-function getDoctors($kiekis) {
-    $manoSQL  = "SELECT * FROM doctors
+function getPatients($kiekis = 99999) {
+    $manoSQL  = "SELECT * FROM patients
                         ORDER BY lname
                         LIMIT $kiekis
                         ";
@@ -87,12 +86,12 @@ $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL);
     return $rezultatai; //mysql objektas, ne masyvas
 }
 
-// $visiGydytojai = getDoctors(10);
-// $gydyt = mysqli_fetch_assoc($visiGydytojai);
-// //print_r($gydyt);
+ // $visiPacientai = getPatients(15);
+ // $pac = mysqli_fetch_assoc($visiPacientai);
+// print_r($pac);
 //
 //
-// while ($gydyt) {
-//     //print_r($gydyt);
-//     $gydyt = mysqli_fetch_assoc($visiGydytojai);
-// }
+ // while ($pac) {
+ //     print_r($pac);
+ //     $pac = mysqli_fetch_assoc($visiPacientai);
+ // }

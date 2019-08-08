@@ -20,7 +20,7 @@ return $prisijungimas;
         mysqli_close($prisijungimas); //atsijungti nuo DB
 }
 getPrisijungimas ();
-echo "Veikia <br/>";
+//echo "Veikia <br/>";
 
 //------------
 function getDoctor($nr){
@@ -62,11 +62,15 @@ function deleteDoctor($nr){
 // deleteDoctor(5);
 
 function editDoctor($nr, $vard, $pavard){
+    $safeNr = mysqli_real_escape_string(getPrisijungimas(),$nr);
+    $safeVard = mysqli_real_escape_string(getPrisijungimas(),$vard);
+    $safePavard = mysqli_real_escape_string(getPrisijungimas(),$pavard);
+    $uzkoduotaPavarde = password_hash($safePavard, PASSWORD_DEFAULT);
     $manoSQL = "UPDATE doctors
                 SET
-                    name = '$vard',
-                    lname = '$pavard'
-                WHERE id = '$nr'
+                    name = '$safeVard',
+                    lname = '$safePavard'
+                WHERE id = '$safeNr'
                 ";
 $result = mysqli_query(getPrisijungimas(), $manoSQL);
 if ($result == false) {
@@ -78,7 +82,7 @@ if ($result == false) {
 
 
 
-function getDoctors($kiekis) {
+function getDoctors($kiekis = 99999) {
     $manoSQL  = "SELECT * FROM doctors
                         ORDER BY lname
                         LIMIT $kiekis
