@@ -56,21 +56,6 @@ function getDoctor($nr){
 // createDoctor($vardas, $pavarde)
 // deleteDoctor($nr)
 
-function editDoctor($nr, $vard, $pavard){
-    $uzkoduotasNR = mysqli_real_escape_string(getPrisijungimas(), $nr);
-    $uzkoduotasVard = mysqli_real_escape_string(getPrisijungimas(), $vard);
-    $uzkoduotasPavard = mysqli_real_escape_string(getPrisijungimas(), $pavard);
-    // $uzkoduotasPavard = passwor_hash($uzkoduotasPavard, PASSWORD_DEFAULT);
-
-    $manoSQL = "UPDATE doctors set
-                                        name = '$uzkoduotasVard',
-                                        lname = '$uzkoduotasPavard'
-                                     WHERE
-                                         id = '$uzkoduotasNR'
-                                     LIMIT 1
-                                     ";
-    $result = mysqli_query(getPrisijungimas(), $manoSQL);
-}
 
 // mysqli_real_escape_string
 
@@ -110,6 +95,24 @@ function deleteDoctor($nr) {
 deleteDoctor(120);
 
 // pakeiciam gydytoju duomenis, uzkomentuojam
+
+function editDoctor($nr, $vard, $pavard){
+    $uzkoduotasNR = mysqli_real_escape_string(getPrisijungimas(), $nr);
+    $uzkoduotasVard = mysqli_real_escape_string(getPrisijungimas(), $vard);
+    $uzkoduotasPavard = mysqli_real_escape_string(getPrisijungimas(), $pavard);
+    // $uzkoduotasPavard = passwor_hash($uzkoduotasPavard, PASSWORD_DEFAULT);
+
+    $manoSQL = "UPDATE doctors set
+                                        name = '$uzkoduotasVard',
+                                        lname = '$uzkoduotasPavard'
+                                     WHERE
+                                         id = '$uzkoduotasNR'
+                                     LIMIT 1
+                                     ";
+    $result = mysqli_query(getPrisijungimas(), $manoSQL);
+}
+
+
 // function editDoctor($nr, $vardas, $pavarde) {
 //     $manoSQL = "UPDATE doctors set
 //                                     name = '$vardas',

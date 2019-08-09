@@ -11,7 +11,7 @@
             <label for="vard"> Jusu vardas </label> <br />
             <input type="text" name="vard">         <br />
 
-            <label for="pvard"> Jusu paverde </label> <br />
+            <label for="pvard"> Jusu pavarde </label> <br />
             <input type="text" name="pvard" >         <br />
 
 

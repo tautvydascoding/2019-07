@@ -1,13 +1,13 @@
 <?php
 
-//prisijungimas prie
+//prisijungimas prie DB
 
 //konstantos
 
 define("DB_USER", 'vaidasober');
 define("DB_PASS", 'slaptazodis');
 define("DB_HOST", 'localhost');
-define("DB_NAME", 'hospital9');
+define("DB_NAME", 'el_parduotuve');
 
 mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 // echo "Veikia  <br />  <br />";
@@ -24,13 +24,11 @@ function getPrisijungimas (){
     // mysqli_close($prisijungimas);  // atsijungit nuo DB
 }
 
-/// iki cia viskas svarbu - persirasyti - isidemeti
-
 //======================================
 
-//Funcija paimti viena gydytoja
-function getDoctor($nr){
-     $manoSQL = "SELECT * FROM doctors WHERE id = '$nr' ";
+//Funcija paimti viena preke
+function getPreke($nr){
+     $manoSQL = "SELECT * FROM prekes WHERE id = '$nr' ";
      $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL);
      if ($rezultatai == false) {                // sias tris eilutes nera butina rasyti
          return "Klaida:  "  . mysqli_error(getPrisijungimas()  );
@@ -45,27 +43,12 @@ function getDoctor($nr){
 }
 
 //testuojam:
-// $gydytojas = getDoctor(3);
-// // $gydytojas = getDoctor(4);
-// print_r($gydytojas);
+// $preke = getPreke(1);
+// print_r($preke);
 
+//=========================pildyti aoie prekes toliau==============
 
-// ======================08 15 d darbas 13 diena =====================
-//naudosim:
-
-// createDoctor($vardas, $pavarde)
-// deleteDoctor($nr)
-
-
-// mysqli_real_escape_string
-
-// getDoctors($kiekis = 999999)
-//
-// $visi = getDoctors();
-// $gyd10 = getDoctors(10);
-//========================================================
-
-function createDoctor($vard, $pavard) {
+function createPreke($vard, $pavard) {
     $manoSQL = "INSERT INTO doctors VALUES (NULL, '$vard', '$pavard')";
     // '$vard', '$pavard' - cia svarbu uzdeti viengubas kabutes
     $result = mysqli_query(getPrisijungimas(), $manoSQL);
@@ -85,14 +68,18 @@ function createDoctor($vard, $pavard) {
 
 // kita funkcija - deleteDoctor - susikuriam funkcija, istrinam po viena gydytoja; si funkcija pavojinga, nes
 // nenurodant - gali istrinti visus gydytojus. Uzkomentuojam...
-function deleteDoctor($nr) {
-    $manoSQL = "DELETE FROM doctors WHERE id = '$nr' ";
-    $result = mysqli_query(getPrisijungimas(), $manoSQL);
-    if ($result == false) {
-        echo "KLAIDA, nepavyko istrinti gydytojo <br />";
-    }
-}
-deleteDoctor(120);
+
+
+// function deleteDoctor($nr) {
+//     $manoSQL = "DELETE FROM doctors WHERE id = '$nr' ";
+//     $result = mysqli_query(getPrisijungimas(), $manoSQL);
+//     if ($result == false) {
+//         echo "KLAIDA, nepavyko istrinti gydytojo <br />";
+//     }
+// }
+// deleteDoctor(120);
+
+
 
 // pakeiciam gydytoju duomenis, uzkomentuojam
 
