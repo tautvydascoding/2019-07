@@ -17,7 +17,7 @@
 
     <body>
 
-        <h1> Isijunk inspect->console </h1>
+        <h1> Visi gydytojai </h1>
 
             <p>
                 <?php
@@ -27,21 +27,21 @@
 
                 // vardas pavarde issivesti
 
-                echo "Gydytojas: <br />";
-
-                    $numeris = 4;  // norimo gydytojo is DB numeris (id)
-
-                    $gydytojas = getDoctor( $numeris);
-                    // print_r($gydytojas);
-
-                    echo $gydytojas[1] . " " . $gydytojas[2] ;
+                // echo "Gydytojas: <br />";
+                //
+                //     $numeris = 4;  // norimo gydytojo is DB numeris (id)
+                //
+                //     $gydytojas = getDoctor( $numeris);
+                //     // print_r($gydytojas);
+                //
+                //     echo $gydytojas[1] . " " . $gydytojas[2] ;
 
 //------------------------------------------------su for ciklu-----------
-        for ($i=0; $i < 10; $i++) {
-            $gydytojas = getDoctor($i);
-            echo "pavarde:  $gydytojas[2] <br />";
-        }
-        echo "<hr />";
+        // for ($i=0; $i < 10; $i++) {
+        //     $gydytojas = getDoctor($i);
+        //     echo "pavarde:  $gydytojas[2] <br />";
+        // }
+        // echo "<hr />";
 
 
 
@@ -55,10 +55,14 @@
                     while ($gydytojasArray){
                         echo "<ul>" .
                                     "<li>" .
-                                        "<a href='page-doctor.php?nr={$gydytojasArray['id']}'>" .
-                                            $gydytojasArray['name'] . " " .
-                                            $gydytojasArray['lname'] . " " .
-                                            $gydytojasArray['id'] . "</a>" .
+                                        "<h4>" .
+                                            "<a href='page-doctor.php?nr={$gydytojasArray['id']}'>" .
+                                                $gydytojasArray['name'] . " " .
+                                                $gydytojasArray['lname'] . " " .
+                                                $gydytojasArray['id'] . "</a>" . " " .
+                                                "<a class='btn bg-danger text-white' href='doctor-delete.php?nr={$gydytojasArray['id']}'> DELETE </a>" .
+                                        "</h4>" .
+                                                // "<a class='btn bg-danger text-white' href='doctor-delete.php?nr={$gydytojasArray['id']}'> DELETE </a>" .
                                     "</li>" .
                             "</ul>" .
                             "<hr />";

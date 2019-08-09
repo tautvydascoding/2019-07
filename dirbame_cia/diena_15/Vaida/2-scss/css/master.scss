@@ -1,0 +1,27 @@
+$main-color: red;
+$second_color: black;
+$min_aukstis: 100px;
+
+
+
+
+body{
+    background-color: $second_color;
+    min-height: $min_aukstis;
+    body h1{
+        color: orange;
+    }
+}
+
+.aukstis-100 {
+    height: $min_aukstis;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 300px;
+}
+.aukstis-500 {
+    height: 500px;
+}
