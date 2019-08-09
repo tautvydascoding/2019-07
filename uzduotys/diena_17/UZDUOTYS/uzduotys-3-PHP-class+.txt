@@ -6,6 +6,7 @@
 
 // UZDUOTIS 2:
 // susikurti  objektus: Monika, Tadas, Kestas
+$Monika = new Zmogus();
 
 
 // UZDUOTIS 2.1
