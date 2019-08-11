@@ -25,6 +25,8 @@ function getPrisijungimas() {
 // -----------
 //
 function getDoctor($nr){
+    $nr = mysqli_real_escape_string( getPrisijungimas(),$nr); // apdorojma nuo simmboliu ' " >
+
     $manoSQL = "SELECT * FROM doctors WHERE id = '$nr'   ";
     $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL); // test Mysql objektas
     if (  $rezultatai == false ) {
@@ -42,6 +44,9 @@ function getDoctor($nr){
 
 // gydytojo irasymas i DB
 function createDoctor($vard, $pavard) {
+    $vard = mysqli_real_escape_string( getPrisijungimas(),$vard); // apdorojma nuo simmboliu ' " >
+    $pavard = mysqli_real_escape_string( getPrisijungimas(),$pavard); // apdorojma nuo simmboliu ' " >
+
     $manoSQL = "INSERT INTO doctors VALUES (NULL, '$vard', '$pavard'); ";
     $result = mysqli_query(getPrisijungimas(), $manoSQL);
     if ($result == false) {
@@ -55,6 +60,7 @@ function createDoctor($vard, $pavard) {
 
 //
 function deleteDoctor($nr) {
+    $nr = mysqli_real_escape_string( getPrisijungimas(),$nr); // apdorojma nuo simmboliu ' " >
     $manoSQL = "DELETE FROM doctors
                         WHERE id = '$nr'
                         LIMIT 1
@@ -68,12 +74,18 @@ function deleteDoctor($nr) {
 // test
 // deleteDoctor(7);
 function editeDoctor($nr, $vard, $pavard) {
+    $uzkoduotasNR = mysqli_real_escape_string( getPrisijungimas(),$nr);
+    $uzkoduotasVard = mysqli_real_escape_string( getPrisijungimas(),$vard);
+
+    $uzkoduotasPard = mysqli_real_escape_string( getPrisijungimas(),$pavard);
+    // $uzkoduotasPard = password_hash($uzkoduotasPard, PASSWORD_DEFAULT);
+
     // mysqli_real_escape_string
     $manoSQL = "UPDATE doctors  SET
-                                    name = '$vard',
-                                    lname = '$pavard'
+                                    name = '$uzkoduotasVard',
+                                    lname = '$uzkoduotasPard'
                                 WHERE
-                                    id = '$nr'
+                                    id = '$uzkoduotasNR'
                                 LIMIT 1
                                 ";
     $result = mysqli_query(getPrisijungimas(), $manoSQL);
@@ -86,7 +98,8 @@ function editeDoctor($nr, $vard, $pavard) {
 // editeDoctor(3, "Jonas",'Otas');
 
 
-function getDoctors($kiekis) {
+function getDoctors($kiekis = 99999) {
+    $kiekis = mysqli_real_escape_string( getPrisijungimas(),$kiekis); // apdorojma nuo simmboliu ' " >
     $manoSQL = "SELECT * FROM doctors
                          ORDER BY lname
                          LIMIT $kiekis
