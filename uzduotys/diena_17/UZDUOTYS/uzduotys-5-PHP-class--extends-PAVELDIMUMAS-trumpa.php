@@ -1,7 +1,7 @@
 <?php
 class Zmogus {
     public $ugis = 0;
-    private $pusryciai = '';
+    private $pusryciai = 'pusryciai';
     protected $turtas = 'namas';
 }
 class Vyras  extends Zmogus {

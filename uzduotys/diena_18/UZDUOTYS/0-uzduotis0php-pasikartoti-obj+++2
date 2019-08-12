@@ -1,0 +1,13 @@
+<?php
+
+// uzduotis
+// 1) sukurti klase ,, mokykla" su kintamaisiais:
+// miesas
+// adresas
+// darbSk (privatus)
+// 2)
+// sukurti pora objektu mokyklos
+// 3)
+// priimti i darba pora darbuotoju
+// 3.1)
+// pasitikrinti ar pavyko padidinti darbuotoju sk.

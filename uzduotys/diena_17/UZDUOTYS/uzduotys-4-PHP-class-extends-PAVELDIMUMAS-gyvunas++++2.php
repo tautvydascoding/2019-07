@@ -1,4 +1,7 @@
 
+// TIKSLAS:
+// pamatyti ka valge Vilkas, kai ta informacija yra teve privatus kintamasis
+
  // UZDUOTIS 1.0:
  // sukurti klase 'Gyvunas' su kintamaisiais:
  // public 'svoris', private 'pusryciai', protected 'ligos'
