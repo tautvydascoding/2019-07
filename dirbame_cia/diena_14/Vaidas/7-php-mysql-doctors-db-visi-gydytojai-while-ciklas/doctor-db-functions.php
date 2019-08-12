@@ -73,7 +73,7 @@ function createDoctor($vard, $pavard) {
 
 
 //gydytojo irasymas i BD
-// createDoctor("Tomas", "Tomauskas");
+createDoctor("Tomassss", "Tomauskas");
 // createDoctor("Antanas", "Antanauskas");
 // createDoctor("Pranas", "Pranaitis");
 // sis kodas dar neveikia, reikia sukodinti kad juos itraukti - kursim funkcija auksciau - function createDoctor
