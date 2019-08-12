@@ -17,7 +17,83 @@
 
     <body>
 
-        <h1> Visos mano prekes </h1>
+
+        <!-- <nav class="float-kaire">
+            <ul>
+                <li class="float-kaire"> <a href="#">home</a> </li>
+                <li class="float-kaire"> <a href="#">our team</a> </li>
+                <li class="float-kaire"> <a href="#">projects</a> </li>
+                <li class="float-kaire"> <a href="#">contact</a> </li>
+                <div class="isjungiu-float"> </div>
+            </ul>
+        </nav> -->
+
+        <div class="container">
+            <div class="top-header">
+        <div class="container d-flex justify-content-between">
+            <div class="top-menu-left d-flex justify-content-center align-items-center">
+
+                <nav class="float-kaire">
+
+                        <ul>
+                            <li class="float-kaire">
+                                <a href=" ">Pristatymas</a>
+                            </li class="float-kaire">
+
+                            <li class="float-kaire">
+                                <a href=" ">Apmokėjimas</a>
+                            </li class="float-kaire">
+
+                            <li class="float-kaire">
+                                <a href=" ">Informacija</a>
+                            </li class="float-kaire">
+
+                            <div class="isjungiu-float"> </div>
+                        </ul>
+
+                </nav>
+
+            </div>
+            <div class="top-menu-center d-flex justify-content-center align-items-center">
+                <span>Susisiekite <b>+370 674 03397</b> </span>
+            </div>
+            <div class="top-menu-right">
+                <ul>
+                    <li>
+                        <img src="img/marker.png" <img src="..."  alt="Kontaktai">
+                        <a href="/kontaktai/">Kontaktai</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+            <header class="row  aukstis-100  bg-info">
+                <div class="col-md-12   bg-warning">
+                    Header
+                </div>
+            </header>
+
+            <div class="row  mt-2 mb-2">
+                <nav class="col mr-2 aukstis-300   bg-warning">
+                    Nav
+                </nav>
+                <main class="col-md-10  aukstis-300   bg-warning">
+                    <h3> Visos mano prekes </h3>
+                </main>
+
+
+            </div>
+
+            <footer class="row aukstis-100  bg-warning">
+                <div class="col-md-12">
+                    &#169; Copyright 2019
+                </div>
+            </footer>
+
+        </div>
+
+
+
 
             <p>
                 <?php
@@ -25,7 +101,7 @@
 
 
                 ?>
-<!-- New - create doctor mygtukas -->
+
 
 <a class="btn btn-success" href="page-prekes-form.php"> Nauja preke </a>
 
@@ -57,8 +133,8 @@
                                                 // $prekesARRAY['kiekis'] . " " .
                                                 // $prekesARRAY['ar_rodyti'] .
                                                 "</a>" . " " .
-                                                // "<a class='btn bg-danger text-white' href='preke-delete.php?nr={$prekesARRAY['id']}'> DELETE </a>" . " " .
                                                 "<a class='btn bg-warning text-white' href='page-prekes-update-form.php?nr={$prekesARRAY['id']}'> KEISTI </a>" . " " .
+                                                "<a class='btn bg-danger text-white' href='preke-delete.php?nr={$prekesARRAY['id']}'> DELETE </a>" . " " .
                                         "</h4>" .
                                     "</li>" .
                             "</ul>" .
