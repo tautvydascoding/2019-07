@@ -12,8 +12,8 @@
 <!-- 2019-08-06 paskaitos pasikartojimas -->
     <ul>
         <?php
-            include("ManoAsmenineDB.php");
-            include("PAGE-DOCTOR.php");
+            include("DOCTORS-DB-FUNCTIONS.php");
+            // include("PAGE-DOCTOR.php");  //ŠITO NEREIKIA!!!!!!!!!!!!!!!!!!!!
             // // Sugrąžinam informaciją apie vieną (pasirinktą) gydytoją
             $number = 2; // Mūsų ieškomo gydytojo ID numeris
             $doctor = getDoctors($number);

@@ -27,10 +27,10 @@
 
                 // vardas pavarde issivesti
 
-                echo "Pacientas: <br />";
-                    $numeris = 3;  // norimo paciento is DB numeris (id)
-                    $pacientas = getPatient( $numeris);
-                echo $pacientas[1] . " " . $pacientas[2] ;
+                // echo "Pacientas: <br />";
+                //     $numeris = 3;  // norimo paciento is DB numeris (id)
+                //     $pacientas = getPatient( $numeris);
+                // echo $pacientas[1] . " " . $pacientas[2] ;
 
 
 //--------------------------------------------su while ciklu-------
@@ -41,7 +41,7 @@
                 // print_r($pacientasArray);
 
                 while ( $pacientasArray ){
-                    echo("<h2>" . $pacientasArray['name'] . " " . $pacientasArray['lname'] . " " . "</h2>");
+                    echo("<h4>" . $pacientasArray['name'] . " " . $pacientasArray['lname'] . " " . "</h4>");
                     $pacientasArray = mysqli_fetch_assoc( $visiPacientai );
                     }
 

@@ -112,7 +112,7 @@ nav li {
 a {
     text-decoration: none;
 }
-/* uzvedus pele ant nuorodos pasikeicia uorodos teksto spalva... */
+/* uzvedus pele ant nuorodos pasikeicia nuorodos teksto spalva... */
 a:hover {
     color: orange;
     text-decoration: none;
