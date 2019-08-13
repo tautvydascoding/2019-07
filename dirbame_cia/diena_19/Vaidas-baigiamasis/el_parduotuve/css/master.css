@@ -1,0 +1,54 @@
+h1 {
+    color: red;
+}
+.aukstis-100 {
+    height: 100px;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 300px;
+}
+.aukstis-500 {
+    height: 500px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.float-kaire {
+    float: left;
+}
+.isjungiu-float {
+    clear: both;
+    content: "";
+}
+
+nav {
+    width: 65%;
+}
+nav ul {
+    padding-left: 0;
+    padding-top: 25px;
+}
+nav li {
+    width: 25%;
+    font-size: 25px;
+    /* border: solid 1px red; */
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.fonas {
+    border: solid 1px red;
+}
+
+.plotis-20 {
+    width: 20%;
+}

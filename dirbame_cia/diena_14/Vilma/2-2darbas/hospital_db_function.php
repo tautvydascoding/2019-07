@@ -74,7 +74,7 @@ if ($result == false) {
     }
 }
 
-editDoctor(5, 'Petras', 'Petruskevicius');
+//editDoctor(5, 'Petras', 'Petruskevicius');
 
 
 
@@ -87,12 +87,12 @@ $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL);
     return $rezultatai; //mysql objektas, ne masyvas
 }
 
-$visiGydytojai = getDoctors(10);
-$gydyt = mysqli_fetch_assoc($visiGydytojai);
-//print_r($gydyt);
-
-
-while ($gydyt) {
-    //print_r($gydyt);
-    $gydyt = mysqli_fetch_assoc($visiGydytojai);
-}
+// $visiGydytojai = getDoctors(10);
+// $gydyt = mysqli_fetch_assoc($visiGydytojai);
+// //print_r($gydyt);
+//
+//
+// while ($gydyt) {
+//     //print_r($gydyt);
+//     $gydyt = mysqli_fetch_assoc($visiGydytojai);
+// }

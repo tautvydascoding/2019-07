@@ -58,10 +58,9 @@ function getDoctors() {
 // }
 
 function editDoctor($nr, $vard, $pavard) {
-    $conn = mysqli_connect(DB_HOST, DB_USER, DB_P, DB_BASE);
-    $uzkoduotasNR = mysqli_real_escape_string($conn, $nr);
-    $uzkoduotasVard = mysqli_real_escape_string($conn, $vard);
-    $uzkoduotasPavard = mysqli_real_escape_string($conn, $pavard);
+    $uzkoduotasNR = mysqli_real_escape_string(getConnection(), $nr);
+    $uzkoduotasVard = mysqli_real_escape_string(getConnection(), $vard);
+    $uzkoduotasPavard = mysqli_real_escape_string(getConnection(), $pavard);
     $mysql = "UPDATE doctors SET
                              name = '$uzkoduotasVard',
                              lname = '$uzkoduotasPavard'

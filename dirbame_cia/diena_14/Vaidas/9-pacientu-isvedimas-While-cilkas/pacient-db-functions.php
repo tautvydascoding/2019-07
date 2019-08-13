@@ -5,7 +5,7 @@
 define("DB_USER", 'vaidasober');
 define("DB_PASS", 'slaptazodis');
 define("DB_HOST", 'localhost');
-define("DB_NAME", 'hospital4');
+define("DB_NAME", 'hospital9');
 
 
 function getPrisijungimas (){
@@ -18,7 +18,7 @@ function getPrisijungimas (){
     // mysqli_close($prisijungimas);  // atsijungit nuo DB
 }
 getPrisijungimas();
-echo "prisijungiau prie DB! <br />";
+// echo "prisijungiau prie DB! <br />";
 
 
 //======================================

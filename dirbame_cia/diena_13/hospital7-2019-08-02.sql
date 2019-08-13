@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `hospital7`
 --
-CREATE DATABASE IF NOT EXISTS `hospital7` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `hospital7`;
+CREATE DATABASE IF NOT EXISTS `hospital9` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `hospital9`;
 
 -- --------------------------------------------------------
 
