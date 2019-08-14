@@ -9,16 +9,19 @@
 
         <link rel="stylesheet" href="libs/bootstrap-4/css/bootstrap.min.css">
         <!-- !! mano CSS failas visada pats zemiausias -->
-        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/master.css?verija=2">
 
     </head>
     <body>
 
-        <h1> Isijunk Inspect-console (mokomes js) </h1>
+        <h1> su js nueisime i php
+            faila ir is jo pasiimsime
+            viska ka jis "echo"
+         </h1>
 
 
         <div id='results'> AAA: </div>
-
+        <div class="mygtukas bg-info"> Vykdyti    </div>
 
 
         <!-- ------------------------ -->
