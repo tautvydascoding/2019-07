@@ -1,8 +1,8 @@
 <?php
 include('DOCTORS-DB-FUNCTIONS.php');
-session_start();
-$_SESSION['zinute'] = "Gydytojas sėkmingai ištrintas";
-echo $_SESSION['zinute'];
+// session_start();
+// $_SESSION['zinute'] = "Gydytojas sėkmingai ištrintas";
+// echo $_SESSION['zinute'];
 
 // Informuoti vartotoją, kad ištrynimas sėkmingai, įdėti sugrąžinimą atgal į main puslapį ir dar main puslapyje parodyti, jog viskas sėkmingai išsitrynė
 // echo "Gydytojas sėkmingai ištrintas";

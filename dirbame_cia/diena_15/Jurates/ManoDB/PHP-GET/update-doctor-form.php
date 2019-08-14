@@ -1,7 +1,7 @@
 <?php
 include('DOCTORS-DB-FUNCTIONS.php');
 $nr = $_GET['number'];
-// print_r($number);
+// print_r($nr);
 $gydytojas = getDoctor($nr);
 // print_r($gydytojas);
 ?>
