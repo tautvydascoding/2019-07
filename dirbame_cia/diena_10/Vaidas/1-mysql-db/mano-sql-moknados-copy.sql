@@ -121,7 +121,7 @@ SELECT *
     ON doctors.id = patients.doctor_id
     WHERE patients.name = "Marks";
 
-SELECT column_name(s)
+SELECT table1.column_name(s)
     FROM table1
     INNER JOIN table2
     ON table1.column_name = table2.column_name;
