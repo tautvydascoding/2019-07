@@ -18,7 +18,7 @@
             <input type="text" name="pozicija" >         <br />
 
             <label for="prekes_id"> Prekes id </label> <br />
-            <input type="text" name="prekes_id" >         <br />
+            <input type="file" name="prekes_id" >         <br />
 
 
 

@@ -4,29 +4,30 @@
 
 //konstantos
 
-define("DB_USER", 'vaidasober');
-define("DB_PASS", 'slaptazodis');
-define("DB_HOST", 'localhost');
-define("DB_NAME", 'el_parduotuve');
-
-mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-// echo "Veikia  <br />  <br />";
-
-//arba
-function getPrisijungimas (){
-    $prisijungimas = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-    if ($prisijungimas == false) {
-        echo "ERROR!!! Prisijungti nepavyko <br />";
-        echo mysqli_connect_error()    .  "<br  />";
-    }
-    mysqli_set_charset($prisijungimas, "utf8"); // utf8 rasom be bruksneliu
-    return $prisijungimas;
-    // mysqli_close($prisijungimas);  // atsijungit nuo DB
-}
+// define("DB_USER", 'vaidasober');
+// define("DB_PASS", 'slaptazodis');
+// define("DB_HOST", 'localhost');
+// define("DB_NAME", 'el_parduotuve2');
+//
+// mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+// // echo "Veikia  <br />  <br />";
+//
+// //arba
+// function getPrisijungimas (){
+//     $prisijungimas = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+//     if ($prisijungimas == false) {
+//         echo "ERROR!!! Prisijungti nepavyko <br />";
+//         echo mysqli_connect_error()    .  "<br  />";
+//     }
+//     mysqli_set_charset($prisijungimas, "utf8"); // utf8 rasom be bruksneliu
+//     return $prisijungimas;
+//     // mysqli_close($prisijungimas);  // atsijungit nuo DB
+// }
 
 //======================================
 
 //Funcija paimti viena prekes foto
+// cia reikia paimti getFotos varda tiktai===============
 function getFoto($nr){
      $manoSQL = "SELECT * FROM fotos WHERE id = '$nr' ";
      $rezultatai = mysqli_query(getPrisijungimas(), $manoSQL);
@@ -96,18 +97,34 @@ function editFoto($nr, $pav_pavadinimas, $pav_aprasymas, $pozicija, $prekes_id) 
 
 //============================================
 function getFotos($kiekis = 999999) {
-    $manoSQL = "SELECT * FROM fotos
-                        ORDER BY pavadinimas
-                        LIMIT $kiekis
+    // $manoSQL = "SELECT *
+    //                     FROM fotos
+    //                     ORDER BY pozicija
+    //                     LIMIT $kiekis
+    //                     ";
+    $manoSQL = "SELECT fotos.pav_pavadinimas
+                        INNER JOIN prekes
+                        ON prekes.id = fotos.prekes_id
+                        WHERE prekes.id = "1"
                         ";
     $result = mysqli_query(getPrisijungimas(), $manoSQL);
     return $result;  // MySQL objektas, ne masyvas
 }
-
-// $visosFotos = getFotos(1);
+//
+// $visosFotos = getFotos();
 // $fotosARRAY = mysqli_fetch_assoc($visosFotos);
-// // print_r( $fotosARRAY);
+// // // print_r( $fotosARRAY);
 // while ($fotosARRAY){
-//     // print_r( $fotosARRAY);
+// //     // print_r( $fotosARRAY);
 //     $fotosARRAY = mysqli_fetch_assoc($visosFotos);
 // }
+
+
+
+// ==========================================
+
+// SELECT fotos.pav_pavadinimas, fotos.pav_aprasymas, fotos.pozicija, fotos.prekes_id
+//     FROM fotos
+//     INNER JOIN prekes
+//     ON prekes.id = fotos.prekes_id
+//     WHERE prekes.id = "1";
