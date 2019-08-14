@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+}
+.aukstis-100 {
+    height: 100px;
+}
+
+.aukstis-300 {
+    height: 300px;
+}
+
+.aukstis-500 {
+    height: 500px;
+}
+
+
+
+.clearfix {
+    clear: both;
+}
+
+.block-1, .block-2, .block-3 {
+    width: 33%;
+    float: left;
+    background-color: coral;
+    /* margin-bottom: 20px;
+    margin-top: 20px; */
+}
+
+.block-4 {
+    background-color: blue;
+}
+
+.block-1 {
+    /* margin-right: 5px */
+}
+
+.block-2 {
+    /* margin-right: 5px */
+}
+
+/*  nuo cia bus media Plansetei nuo 0 iki 768!!! ------------------------------------------------  */
+@media (max-width: 768px) {
+    .block-1 {
+        width: 50%;
+    }
+    .block-2 {
+        width: 50%;
+    }
+    .block-3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425) {
+    .block-1 {
+        width: 100%;
+    }
+    .block-2 {
+        width: 100%;
+    }
+    .block-3 {
+        width: 100%;
+    }
+    .block-4 {
+        display: none;
+    }
+}

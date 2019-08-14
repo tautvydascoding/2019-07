@@ -1,0 +1,22 @@
+SEO esme - svetaine search enginuose renka balus (pagal keyword'us) ir pagal tai keliau auksciau arba zemiau rezuultatuose
+
+google searche ivedus tekstas viduje "" , search engine ieskos butent siu reiksmiu arba ju sinonimu.
+jei parasoma ko ieskoma ir seka " : svetaine.com", bus ieskoma tik tam website 
+
+google search - "sea online checker"   prasukus puslapi parodo puslapio trukumus (kur dar galima gauti tasku, kad kilti google search'e)
+
+3 balai uz title
+2 balai uz description      (abu talpinami i head/meta)
+
+css medijai rasoma pacioje apacioje css failo (kuris turetu buti vienas visiems puslapio variantams, pc, mobile ir t.t.)
+
+
+@media (max/min-width: Z px){			@media (max-width: Z px){aside{display:none;}}   universaliai pritaiko mobiliem plansetem ir mob.
+p{color: red;
+}
+
+
+uzdeti visus paragrafus plansetei??  
+
+
+mazinti svetaine kol suluzta, radus taska, atitinkamai pasikoreguoti CSS @media
