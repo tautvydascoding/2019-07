@@ -3,7 +3,7 @@ include_once('Patients-DB-functions.php');
 $nr = $_GET['ID_NUMERIS'];
 // print_r($nr);
 $pacientas = getPatient($nr);
-print_r($pacientas);
+// print_r($pacientas);
 ?>
 
 <!DOCTYPE html>
@@ -23,17 +23,17 @@ print_r($pacientas);
         <label for="vardas">Paciento vardas</label><br>
         <input type="text" name="vardas" value="<?php echo $pacientas['Name'];?>"><br>
 
-        <label for="pavarde">Paciento pavarde</label><br>
+        <label for="pavarde">Paciento pavardė</label><br>
         <input type="text" name="pavarde" value="<?php echo $pacientas['LastName'];?>"><br>
 
-        <label for="pavarde">Paciento pavarde</label><br>
-        <input type="text" name="pavarde" value="<?php echo $pacientas['Address'];?>"><br>
+        <label for="pavarde">Paciento adresas</label><br>
+        <input type="text" name="adresas" value="<?php echo $pacientas['Address'];?>"><br>
 
-        <label for="pavarde">Paciento pavarde</label><br>
-        <input type="text" name="pavarde" value="<?php echo $pacientas['MobileNumber'];?>"><br>
+        <label for="pavarde">Paciento mobiliojo telefono numeris</label><br>
+        <input type="text" name="mobNr" value="<?php echo $pacientas['MobileNumber'];?>"><br>
 
-        <label for="pavarde">Paciento pavarde</label><br>
-        <input type="text" name="pavarde" value="<?php echo $pacientas['Email'];?>"><br>
+        <label for="pavarde">Paciento el.paštas</label><br>
+        <input type="text" name="elPastas" value="<?php echo $pacientas['Email'];?>"><br>
 
         <input type="hidden" name="id" value="<?php echo $pacientas['ID'];?>">
 
