@@ -1,0 +1,72 @@
+
+
+body {
+  margin-top: 110px; }
+
+.navbar {
+  box-shadow: 2px 2px 5px #f5a614;
+  opacity: 0.9;
+  background: #fff; }
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem; }
+
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid; }
+
+/* #contacts img {
+  margin-top: -50px; }
+#contacts .card:hover {
+  background: #3292a6;
+  color: #fff; }
+#contacts .fab {
+  color: #fff; }
+ */
+
+
+h1 {
+    color: red;
+}
+.aukstis-100 {
+    height: 100px;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 300px;
+}
+.aukstis-500 {
+    height: 500px;
+}
+
+
+
+
+.allhouses {
+  
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .allhouses {
+    min-height: 500px; }
+    .allhouses h1 {
+      font-size: 4rem; }
+
+  .mb-resp {
+    margin-bottom: 1rem; } }
+
+
+
+
+
+#main-footer {
+    background: #000;
+    color: #fff;
+}
