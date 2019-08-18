@@ -27,6 +27,7 @@ PRIVALOMA: panaudoti bent 4x kartus: include("...")
  MYGTUKAS EDIT   
  Search laukas 
  Search laukas - su autocomplete
+prekes 'galerija' (inner join) 
 
 ... jusu idejos :)
 
