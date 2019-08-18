@@ -1,0 +1,70 @@
+h1 {
+    color: red;
+}
+.aukstis-100 {
+    height: 100px;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 300px;
+}
+.aukstis-500 {
+    height: 500px;
+}
+
+.block-1,
+.block-2,
+.block-3 {
+    width: 33.33333%;
+    float: left;
+}
+
+
+
+
+
+/* ===========media====== */
+/*  plancetei - for tablet */
+/* nuo 0 iki 768 px */
+
+/* @media (max-width: 768px)   {
+    .block-3 {width: 100%;  }
+}
+
+@media (max-width: 768px)   {
+    .block-2 {width: 50%;  }
+}
+
+@media (max-width: 768px)   {
+    .block-1 {width: 50%;  }
+} */
+
+@media (max-width: 768px)   {
+    .block-1 { width: 50%; }
+    .block-2 { width: 50%; }
+    .block-3 { width: 100%;  }
+}
+
+/*  mobiliam - for mobile */
+/* nuo 0 iki 425 px */
+
+@media (max-width: 425px)   {
+    .block-1 { width: 100%;  }
+    .block-2 { width: 100%;  }
+    .block-3 { width: 100%;  }
+    .block-4 { display: none;  }
+}
+
+/* @media (max-width: 425px)   {
+    .block-1 {width: 100%;  }
+}
+
+@media (max-width: 425px)   {
+    .block-2 {width: 100%;  }
+}
+
+@media (max-width: 425px)   {
+    .block-3 {width: 100%;  }
+} */

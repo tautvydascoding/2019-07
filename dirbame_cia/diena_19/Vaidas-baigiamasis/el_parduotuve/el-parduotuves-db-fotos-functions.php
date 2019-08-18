@@ -103,6 +103,7 @@ function getFotos($kiekis = 999999) {
     //                     LIMIT $kiekis
     //                     ";
     $manoSQL = "SELECT fotos.pav_pavadinimas
+                        FROM fotos
                         INNER JOIN prekes
                         ON prekes.id = fotos.prekes_id
                         WHERE prekes.id = "1"

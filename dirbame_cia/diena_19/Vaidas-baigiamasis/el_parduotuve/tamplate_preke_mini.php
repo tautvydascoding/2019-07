@@ -4,7 +4,11 @@
 
 
 <!-- zemiau pakeiciau foto pavadinima -->
-                    <img src="img\prekes\<?php echo $prekesARRAY['fotos.pav_pavadinimas'] ?>" class=""  style=" ">
+<?php
+print_r ($fotosARRAY)
+?>
+
+                    <img src="img\prekes\" <?php echo $ARRAY['pav_pavadinimas'] ?> class=""  style=" ">
 
                     <h4> <?php echo $prekesARRAY['pavadinimas']  ?> </h4>
 

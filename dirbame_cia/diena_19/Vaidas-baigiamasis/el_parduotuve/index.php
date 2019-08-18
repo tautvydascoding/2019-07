@@ -17,14 +17,7 @@
 
     <body>
         <div class="container">
-            <!-- <div class="top-header">
-            <div class="container d-flex justify-content-between">
-                <div class="top-menu-left d-flex justify-content-center align-items-center"></div>
-                <div class="top-menu-center d-flex justify-content-center align-items-center">
-                    <span>Susisiekite <b>+370 674 03397</b> </span>
-                </div>
-            </div>
-            </div> -->
+
             <header class="row  aukstis-100  bg-info">
                 <div class="col-md-12   bg-warning">
                     <!-- Header -->
@@ -62,12 +55,17 @@
 
                         // getdoctor funkcija issisaukti = virs:
 
-
+// SVARBU:
                         $visosPrekes = getPrekes();
                         $prekesARRAY = mysqli_fetch_assoc( $visosPrekes );  // array masyvas
+                        // zemiau dvi eilutes padaryti analiozgiskai su fotos
+                        // $visosPrekes = getPrekes();
+                        // $prekesARRAY = mysqli_fetch_assoc( $visosPrekes );  // array masyvas
                         while ($prekesARRAY){
                             include ("tamplate_preke_mini.php");
                             $prekesARRAY = mysqli_fetch_assoc($visosPrekes);
+                            // zemiau eilute padaryti analiogiskai su fotos
+                            // $prekesARRAY = mysqli_fetch_assoc($visosPrekes);
                             }
 
 
