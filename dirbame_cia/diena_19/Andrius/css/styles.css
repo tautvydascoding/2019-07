@@ -1,0 +1,93 @@
+.Top_header{
+    background-color: grey;
+    padding-bottom: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.Top_menu{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: grey;
+    margin-top: 1%;
+    padding-bottom: 1%;
+}
+.lbp1{
+    margin-left: 5%;
+    background-color: grey;
+    margin-top: 1%;
+    width: 60%;
+    padding-bottom: 25%;
+    float: left;
+}
+.newsletter{
+    background-color: grey;
+    margin-right: 5%;
+    margin-top: 1%;
+    width: 28.5%;
+    float: right;
+    padding-bottom: 15%;
+}
+.fbp{
+    background-color: grey;
+    margin-right: 5%;
+    margin-top: 1%;
+    width: 28.5%;
+    float: right;
+    padding-bottom: 15%;
+}
+.lbp2{
+    margin-left: 5%;
+    background-color: grey;
+    margin-top: 3%;
+    width: 60%;
+    padding-bottom: 25%;
+    float: left;
+}
+.credibility{
+    background-color: grey;
+    margin-right: 5%;
+    margin-top: 1%;
+    width: 28.5%;
+    float: right;
+    padding-bottom: 25%;
+}
+.lbp3{
+    margin-left: 5%;
+    background-color: grey;
+    margin-top: 1%;
+    width: 60%;
+    padding-bottom: 25%;
+    float: left;
+}
+.banner{
+    background-color: grey;
+    margin-right: 5%;
+    margin-top: 1%;
+    width: 13.5%;
+    float: right;
+    padding-bottom: 10%;
+}
+.list{
+    background-color: grey;
+    margin-left: 1.5%;
+    margin-top: 1%;
+    width: 13.5%;
+    float: left;
+    padding-bottom: 10%;
+}
+.soacial{
+    background-color: grey;
+    margin-right: 5%;
+    margin-top: 1%;
+    width: 28.5%;
+    float: right;
+    padding-bottom: 5.5%;
+}
+.footer{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: grey;
+    margin-top: 1%;
+    padding-bottom: 1%;
+    float: right;
+}
