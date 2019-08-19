@@ -11,7 +11,7 @@ include_once('hospital_db_function.php');
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/master25.css">
     </head>
     <body>
         <p>

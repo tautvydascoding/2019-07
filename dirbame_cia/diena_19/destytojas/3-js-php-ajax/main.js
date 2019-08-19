@@ -2,7 +2,7 @@ console.log("ar veikia?");
 
 $('div.mygtukas').on('click', function(){
 
-    <!-- // JavaScript -->
+     // JavaScript -->
     $.ajax({
       url: "test.php",
       type: "POST",  // i php $_POST array
