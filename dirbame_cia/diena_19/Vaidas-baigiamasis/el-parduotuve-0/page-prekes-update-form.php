@@ -7,7 +7,7 @@
     <body>
 
         <?php
-        include('el-parduotuve-db-prisijungimas.php');
+
         include_once('el-parduotuves-db-prekes-functions.php');
         // print_r($_GET);
         $x = $_GET['nr'];
@@ -17,7 +17,7 @@
 
         <h1> Pasirinktos prekes duomenu keitimas  </h1>
             <form action="prekes-update.php" method="post">
-
+                
                 <input type="hidden" name="id" value=" <?php echo $preke[0];     ?>" $nr>
                 <input type="text" name="pavadinimas" value=" <?php echo $preke[1];  ?>" placeholder="Prekes pavadinimas" >
                 <input type="text" name="aprasymas" value=" <?php echo $preke[2];     ?>" placeholder="Prekes aprasymas">

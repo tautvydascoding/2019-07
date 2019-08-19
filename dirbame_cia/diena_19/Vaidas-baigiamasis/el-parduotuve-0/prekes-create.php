@@ -11,7 +11,6 @@
     $kiekis = $_GET['kiekis'];
     $ar_rodyti = $_GET['ar_rodyti'];
 // function createPreke($pavadinimas, $aprasymas, $kaina, $nuolaida, $pozicija, $kiekis, $ar_rodyti)
-    include('el-parduotuve-db-prisijungimas.php');
     include_once('el-parduotuves-db-prekes-functions.php');
     createPreke($pavadinimas, $aprasymas, $kaina, $nuolaida, $pozicija, $kiekis, $ar_rodyti);
 

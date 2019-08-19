@@ -24,7 +24,7 @@
 //     // mysqli_close($prisijungimas);  // atsijungit nuo DB
 // }
 
-// include('el-parduotuve-db-prisijungimas.php');
+
 
 //======================================
 
@@ -111,7 +111,6 @@ function getPrekes($kiekis = 999999) {
     return $result;  // MySQL objektas, ne masyvas
 }
 
-// prekiu isvedimas su while ciklu:
 // $visosPrekes = getPrekes(11);
 // $prekesARRAY = mysqli_fetch_assoc($visosPrekes);
 // // print_r( $prekesARRAY);

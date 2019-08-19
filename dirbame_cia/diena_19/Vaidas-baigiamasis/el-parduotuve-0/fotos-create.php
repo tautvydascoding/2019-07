@@ -1,7 +1,6 @@
 
 
 <?php
-
     // print_r( $_GET );
     //test
     $pav_pavadinimas = $_GET['pav_pavadinimas'];
@@ -9,7 +8,6 @@
     $pozicija = $_GET['pozicija'];
     $prekes_id = $_GET['prekes_id'];
 // function createPreke($pavadinimas, $aprasymas, $kaina, $nuolaida, $pozicija, $kiekis, $ar_rodyti)
-    include('el-parduotuve-db-prisijungimas.php');
     include_once('el-parduotuves-db-fotos-functions.php');
     createFoto($pav_pavadinimas, $pav_aprasymas, $pozicija, $prekes_id);
 

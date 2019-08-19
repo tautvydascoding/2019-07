@@ -26,7 +26,6 @@ h1 {
 .aukstis-100 {
     height: 100px;
 }
-
 .aukstis-200 {
     height: 200px;
 }
@@ -53,22 +52,20 @@ button {
 }
 
 nav {
-    width: 60%;
+    width: 65%;
 }
 nav ul {
     padding-left: 0;
-    padding-top: 35px;
+    padding-top: 25px;
 }
 nav li {
     width: 25%;
-    font-size: 10px;
+    font-size: 25px;
     /* border: solid 1px red; */
     list-style: none;
     text-transform: uppercase;
     text-align: center;
 }
-
-
 
 a {
     text-decoration: none;

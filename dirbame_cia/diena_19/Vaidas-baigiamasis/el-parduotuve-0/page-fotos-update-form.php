@@ -7,7 +7,7 @@
     <body>
 
         <?php
-        include('el-parduotuve-db-prisijungimas.php');
+
         include_once('el-parduotuves-db-fotos-functions.php');
         // print_r($_GET);
         $x = $_GET['nr'];

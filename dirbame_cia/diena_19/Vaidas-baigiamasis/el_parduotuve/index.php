@@ -3,31 +3,25 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <!-- reikalinga kad prisitaikantis dizainas veiktu tvarkingai -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-        <!-- galimos klaidos -->
-        <!-- blogas kelias iki failo -->
-        <!-- "/" ne i ta puse -->
-        <!-- neuzdarete ">" -->
         <link rel="stylesheet" href="css/master.css">
-        <!-- !!!! VISSA MANO CSS failas pats zemiausias -->
     </head>
 
     <body>
-        <div class="container">
+
+
+        <div class="container-fluid">
 
             <header class="row  aukstis-100  bg-info">
                 <div class="col-md-12   bg-warning">
                     <!-- Header -->
                     <nav class="float-kaire">
                             <ul>
-                                <li class="float-kaire"><a href="#">Pristatymas</a></li>
+                                <li class="float-kaire"><a href="editor.php">Redagavimas</a></li>
                                 <li class="float-kaire"><a href="#">Apmokėjimas</a></li>
-                                <li class="float-kaire"><a href="#">Informacija</a></li>
-                                <li class="float-kaire"><a href="#">Kontaktai</a></li>
-                                <span>Susisiekite <b>+370 674 03397</b> </span>
+                                <li class="float-kaire"><a href="registracija.php">Registracija</a></li>
+                                <li class="float-kaire"><a href="contacts.html">Kontaktai</a></li>
                                 <div class="isjungiu-float"> </div>
                             </ul>
                     </nav>
@@ -35,36 +29,55 @@
                     <div class="paieska    float-kaire">
                         <form class="" action="index.html" method="post">
                             <input type="text" name="paieska" placeholder="paieska" value="">
-                            <button type="submit" >Go!</button>
+                            <button type="submit" >Ieškoti</button>
                         </form>
                     </div>
                 </div>
             </header>
 
             <div class="row  mt-2 mb-2">
-                <nav class="col mr-2    bg-warning">
-                    Nav
+                <nav class="col mt-4 mr-2 ">
+                    <h3>Prekiu grupes</h3>
+                    <ul>
+                        <li> <h5> 1 prekių grupė </h5> </li>
+                        <li> <h5> 2 prekių grupė </h5> </li>
+                        <li> <h5> 3 prekių grupė </h5> </li>
+                    </ul>
                 </nav>
-                <main class="col-md-10    bg-warning">
-                    <h3> Visos mano prekes </h3>
+
+                <main class="col-md-10  ">
+                    <h3> Visos prekes </h3>
 
                         <?php
                         include('el-parduotuve-db-prisijungimas.php');
                         include('el-parduotuves-db-prekes-functions.php');
+                        include('el-parduotuves-db-fotos-functions.php');
 
 
                         // getdoctor funkcija issisaukti = virs:
 
-// SVARBU:
+// SVARBU
+            // bandau su fotos:
+                        // $visosFotos = getFotos();
+                        // $fotosARRAY = mysqli_fetch_assoc($visosFotos);
+                        // while ($fotosARRAY){
+                        //     include ("tamplate_preke_mini.php");
+                        //     $fotosARRAY = mysqli_fetch_assoc($visosFotos);
+                        // }
+
+
+
+
                         $visosPrekes = getPrekes();
                         $prekesARRAY = mysqli_fetch_assoc( $visosPrekes );  // array masyvas
-                        // zemiau dvi eilutes padaryti analiozgiskai su fotos
+                        // zemiau dvi eilutes padaryti analogiskai su fotos
                         // $visosPrekes = getPrekes();
                         // $prekesARRAY = mysqli_fetch_assoc( $visosPrekes );  // array masyvas
                         while ($prekesARRAY){
                             include ("tamplate_preke_mini.php");
                             $prekesARRAY = mysqli_fetch_assoc($visosPrekes);
-                            // zemiau eilute padaryti analiogiskai su fotos
+
+                            // zemiau eilute padaryti analigiskai su fotos
                             // $prekesARRAY = mysqli_fetch_assoc($visosPrekes);
                             }
 
@@ -106,7 +119,7 @@
                 ?>
 
 
-<a class="btn btn-success" href="page-prekes-form.php"> Nauja preke </a>
+<!-- <a class="btn btn-success" href="page-prekes-form.php"> Nauja preke </a> -->
 
 
 
@@ -115,36 +128,36 @@
 
 //--------------------------------------------su while ciklu-------
 
-
-                    $visosPrekes = getPrekes(); // gryzta MySQL objektas, ne masyvas (jo viduje yra daug prekiu)
-                    // print_r($visosPrekes);
-
-                    $prekesARRAY = mysqli_fetch_assoc( $visosPrekes );  // array masyvas
-                    // print_r($prekesARRAY);
-
-                    while ($prekesARRAY){
-                        echo "<ul>" .
-                                    "<li>" .
-                                        "<h4>" .
-                                            "<a href='page-prekes.php?nr={$prekesARRAY['id']}'>" .
-                                                $prekesARRAY['id'] . " " .
-                                                $prekesARRAY['pavadinimas'] . " " .
-                                                // $prekesARRAY['aprasymas'] . " " .
-                                                // $prekesARRAY['kaina'] . " " .
-                                                // $prekesARRAY['nuolaida'] . " " .
-                                                // $prekesARRAY['pozicija'] . " " .
-                                                // $prekesARRAY['kiekis'] . " " .
-                                                // $prekesARRAY['ar_rodyti'] .
-                                                "</a>" . " " .
-                                                "<a class='btn bg-warning text-white' href='page-prekes-update-form.php?nr={$prekesARRAY['id']}'> KEISTI </a>" . " " .
-                                                "<a class='btn bg-danger text-white' href='preke-delete.php?nr={$prekesARRAY['id']}'> DELETE </a>" . " " .
-                                                "<a class='btn btn-outline-primary' href='page-fotos-form.php?nr={$prekesARRAY['id']}'> Itraukti foto </a>" . " " .
-                                        "</h4>" .
-                                    "</li>" .
-                            "</ul>" .
-                            "<hr />";
-                        $prekesARRAY = mysqli_fetch_assoc($visosPrekes);
-                    }
+                    //
+                    // $visosPrekes = getPrekes(); // gryzta MySQL objektas, ne masyvas (jo viduje yra daug prekiu)
+                    // // print_r($visosPrekes);
+                    //
+                    // $prekesARRAY = mysqli_fetch_assoc( $visosPrekes );  // array masyvas
+                    // // print_r($prekesARRAY);
+                    //
+                    // while ($prekesARRAY){
+                    //     echo "<ul>" .
+                    //                 "<li>" .
+                    //                     "<h4>" .
+                    //                         "<a href='page-prekes.php?nr={$prekesARRAY['id']}'>" .
+                    //                             $prekesARRAY['id'] . " " .
+                    //                             $prekesARRAY['pavadinimas'] . " " .
+                    //                             // $prekesARRAY['aprasymas'] . " " .
+                    //                             // $prekesARRAY['kaina'] . " " .
+                    //                             // $prekesARRAY['nuolaida'] . " " .
+                    //                             // $prekesARRAY['pozicija'] . " " .
+                    //                             // $prekesARRAY['kiekis'] . " " .
+                    //                             // $prekesARRAY['ar_rodyti'] .
+                    //                             "</a>" . " " .
+                    //                             "<a class='btn bg-warning text-white' href='page-prekes-update-form.php?nr={$prekesARRAY['id']}'> KEISTI </a>" . " " .
+                    //                             "<a class='btn bg-danger text-white' href='preke-delete.php?nr={$prekesARRAY['id']}'> DELETE </a>" . " " .
+                    //                             "<a class='btn btn-outline-primary' href='page-fotos-form.php?nr={$prekesARRAY['id']}'> Itraukti foto </a>" . " " .
+                    //                     "</h4>" .
+                    //                 "</li>" .
+                    //         "</ul>" .
+                    //         "<hr />";
+                    //     $prekesARRAY = mysqli_fetch_assoc($visosPrekes);
+                    // }
 
 //---------------------------------------------------------
  ?>

@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
 
 
-
-
-
-            <div class="preke plotis-30 mr-4 mb-4 float-kaire">
+            <div class="fonas preke plotis-30">
 
 
 <!-- zemiau pakeiciau foto pavadinima -->
-<?php
-// print_r ($fotosARRAY)
-?>
-
-                    <!-- <img src="img\prekes\"
-                    <?php
-                    // echo $fotos$ARRAY['pav_pavadinimas']
-                    ?>
-                    class=""  style=" "> -->
-
-
-                    <img src="img\prekes\fotofonas.jpg" onkeypress="" class=""  style=" ">
+                    <img src="img\prekes\<?php echo $prekesARRAY['fotos.pav_pavadinimas'] ?>" class=""  style=" ">
 
                     <h4> <?php echo $prekesARRAY['pavadinimas']  ?> </h4>
 
@@ -45,11 +24,3 @@
                     </button>
 
             </div>        <!-- uzdariau preke -->
-
-
-
-
-
-
-        </body>
-        </html>

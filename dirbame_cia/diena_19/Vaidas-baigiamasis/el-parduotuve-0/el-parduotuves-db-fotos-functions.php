@@ -26,11 +26,6 @@
 
 //======================================
 
-
-
-// include('el-parduotuve-db-prisijungimas.php');
-
-
 //Funcija paimti viena prekes foto
 // cia reikia paimti getFotos varda tiktai===============
 function getFoto($nr){
@@ -102,34 +97,19 @@ function editFoto($nr, $pav_pavadinimas, $pav_aprasymas, $pozicija, $prekes_id) 
 
 //============================================
 function getFotos($kiekis = 999999) {
+    // $manoSQL = "SELECT *
+    //                     FROM fotos
+    //                     ORDER BY pozicija
+    //                     LIMIT $kiekis
+    //                     ";
     $manoSQL = "SELECT fotos.pav_pavadinimas
-                        FROM fotos
                         INNER JOIN prekes
                         ON prekes.id = fotos.prekes_id
-                        WHERE prekes.id =  ";
-
+                        WHERE prekes.id = "1"
+                        ";
     $result = mysqli_query(getPrisijungimas(), $manoSQL);
     return $result;  // MySQL objektas, ne masyvas
 }
-
-// zemiau nesigavo:
-// function getFotos($kiekis = 999999) {
-//     $manoSQL = "SELECT *
-//                         FROM fotos
-//                         INNER JOIN prekes
-//                         ON prekes.id = fotos.prekes_id
-//                         WHERE fotos.pav_pavadinimas = ""
-//                         ";
-//
-//     $result = mysqli_query(getPrisijungimas(), $manoSQL);
-//     return $result;  // MySQL objektas, ne masyvas
-// }
-
-
-
-
-
-
 //
 // $visosFotos = getFotos();
 // $fotosARRAY = mysqli_fetch_assoc($visosFotos);

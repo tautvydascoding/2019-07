@@ -15,7 +15,7 @@
                 ["Audi", "A6", 2004],
                 ["BMW", "X4", 2010]
             ];
-//arab paprastesnis budas
+//arba paprastesnis budas
     $autos = [];
     $auto1 = ["Audi", "A6", 2004];
     $auto2 = ["BMW", "X4", 2010];

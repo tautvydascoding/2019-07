@@ -1,15 +1,14 @@
 <h1> DELETE doctor</h1>
 
 <?php
-include('el-parduotuve-db-prisijungimas.php');
-include_once('el-parduotuves-db-prekes-functions.php');
+include_once('el-parduotuves-db-fotos-functions.php');
 
 $x = $_GET['nr'];
-deletePreke($x);
+deleteFoto($x);
 ?>
 
 <h3 class='bg-success'>
-    Sekmingai istrinta preke nr: <?php echo ($x);  ?>
+    Sekmingai istrinta preke foto nr: <?php echo ($x);  ?>
     <?= $x; ?>
 </h3>
 

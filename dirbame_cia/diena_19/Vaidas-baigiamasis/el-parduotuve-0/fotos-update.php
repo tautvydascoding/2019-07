@@ -1,6 +1,5 @@
 
 <?php
-    include('el-parduotuve-db-prisijungimas.php');
     include_once('el-parduotuves-db-fotos-functions.php');
     // print_r( GET );
     // print_r( $_POST );

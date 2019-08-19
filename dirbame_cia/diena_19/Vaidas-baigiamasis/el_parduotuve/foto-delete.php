@@ -1,6 +1,7 @@
 <h1> DELETE doctor</h1>
 
 <?php
+include('el-parduotuve-db-prisijungimas.php');
 include_once('el-parduotuves-db-fotos-functions.php');
 
 $x = $_GET['nr'];
